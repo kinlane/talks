@@ -1,0 +1,890 @@
+<!doctype html>  
+<html lang="en">
+
+<head> 
+    <meta charset="utf-8">
+    
+    <title>API 101</title>
+
+    <meta name="description" content="A walk through the history of APIs, API design & planning, API development, API evangelism and whats next when it comes to APIs.">
+    <meta name="author" content="Kin Lane">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/main.css">
+    <link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="http://kinlane.github.com/lib/css/zenburn.css">
+
+    <script>
+        // If the query includes 'print-pdf' we'll use the PDF print sheet
+        document.write( '<link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    
+</head>
+        
+        <body>
+            
+            <div class="reveal">
+    
+                <!-- Used to fade in a background when a specific slide state is reached -->
+                <div class="state-background"></div>
+                
+                <!-- Any section element inside of this container is displayed as a slide -->
+                <div class="slides">
+                    
+                    <section>
+                        <h1>Kin Lane</h1>
+                        <h3>API Evangelist</h3>
+                        <br />
+                        <h3>API 101</h3>
+                        <br />
+                        <p align='center'>API Strategy & Practice - February, 2013</p>             
+                    </section>                          
+                                
+                    <section>
+                        <h1>History of APIs</h1>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/federal-strategy/innovation-fellows/Tag-Cloud-History-of-APIs.png" width="500" />
+                                        
+                    </section>      
+                    
+                    <section>
+                        <h1>History of APIs</h1>
+                        <h3>Commerce</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li>Salesforce</li>
+                            <li>eBay</li>
+                            <li>Amazon</li>
+                            <li>Paypal</li>
+                        </ul>               
+                    </section>                                                  
+
+                    <section>
+                        <h1>History of APIs</h1>
+                        <h3>Social</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li>Flickr</li>
+                            <li>Delicious</li>
+                            <li>Twitter</li>
+                            <li>Facebook</li>
+                        </ul>               
+                    </section>  
+                    
+                    <section>
+                        <h1>History of APIs</h1>
+                        <h3>Cloud / Infrastructure</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li>Amazon S3 (Storage)</li>
+                            <li>Amazon EC2 (Compute)</li>
+                            <li>Amazon SimpleDB (Data)</li>
+                            <li>Amazon RDS (Database)</li>
+                        </ul>               
+                    </section>      
+                    
+                    <section>
+                        <h1>History of APIs</h1>
+                        <h3>Mobile</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li>Instagram (Photos)</li>
+                            <li>Foursquare (Local)</li>
+                            <li>Pandora (Music)</li>
+                        </ul>               
+                    </section>  
+                    
+                    <section>
+                        <h1>History of APIs</h1>
+                        <h3>Why Did It Work?</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Built on HTTP</li>
+                            <li class="fragment">Simplicity</li>
+                            <li class="fragment">Hackable</li>
+                            <li class="fragment">Self-Service</li>
+                            <li class="fragment">Developer Focused</li>
+                            <li class="fragment">Distributed</li>
+                            <li class="fragment">Freemium</li>
+                            <li class="fragment">Pay As You Go</li>
+                        </ul>               
+                    </section>                      
+                    
+                    <section>
+                        <h1>History of APIs</h1>
+                        <h3>Solid Examples Transforming Legacy Models</h3>
+                        <table cellpadding="1" cellspacing="1" style="padding-left: 375px; padding-top: 0px;">
+                            <tr class="fragment">
+                                <td><img src="https://s3.amazonaws.com/kinlane-productions/AWS_LOGO_CMYK.jpg" width="150" /></td>
+                            </tr>
+                            <tr class="fragment">
+                                <td><img src="https://s3.amazonaws.com/kinlane-productions/netflix_logo.gif" width="150" /></td>
+                            </tr>
+                            <tr class="fragment">
+                                <td><img src="https://s3.amazonaws.com/kinlane-productions/npr/npr-logo.jpeg" width="150" /></td>
+                            </tr>
+                            <tr class="fragment">
+                                <td><img src="https://s3.amazonaws.com/kinlane-productions/pearson/pearson-logo.png" width="150" /></td>
+                            </tr>
+                        </table>                                                                    
+                    </section>  
+                    
+                    <section>
+                        <h1>API Planning & Design</h1>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/federal-strategy/innovation-fellows/planning-design.jpeg" width="500" />
+                                        
+                    </section>  
+                    
+                    <section>
+                        <h1>API Planning & Design</h1>
+                        <h3>Take Inventory</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Data</li>
+                            <li class="fragment">Content</li>
+                            <li class="fragment">Resources</li>
+                            <li class="fragment">Most Requested</li>
+                            <li class="fragment">Most Valued</li>
+                        </ul>               
+                    </section>      
+                    
+                    <section>
+                        <h1>API Planning & Design</h1>
+                        <h3>Goals</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Objectives</li>
+                            <li class="fragment">Vision</li>
+                            <li class="fragment">Value</li>
+                            <li class="fragment">Objections</li>
+                            <li class="fragment">Strategy</li>
+                        </ul>               
+                    </section>                                              
+                    
+                    <section>
+                        <h1>API Planning & Design</h1>
+                        <h3>Audience</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Internal</li>
+                            <li class="fragment">Partners</li>
+                            <li class="fragment">Public</li>
+                            <li class="fragment">Technical Users</li>
+                            <li class="fragment">Enterprise Developers</li>
+                            <li class="fragment">Open Developers</li>
+                            <li class="fragment">End-Users of Apps</li>
+                        </ul>               
+                    </section>
+
+                    
+                    <section>
+                        <h1>API Planning & Design</h1>
+                        <h3>REST Patterns</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">URL (Locator) vs. URI (Identifier)</li>
+                            <li class="fragment">Sensible Resources (/books/)</li>
+                            <li class="fragment">Verbs (GET,POST,PUT,DELETE)</li>
+                            <li class="fragment">Parameters (q=)</li>
+                            <li class="fragment">HTTP Headers</li>
+                        </ul>               
+                    </section>                  
+                    
+                    <section>
+                        <h1>API Planning & Design</h1>
+                        <h3>Hypermedia as the Engine of Application State (HATEOAS)</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">No Prior Knowledge of Resource</li>
+                            <li class="fragment">Never Hardcode URI</li>
+                            <li class="fragment">Business Flow</li>
+                            <li class="fragment">Business Logic</li>
+                            <li class="fragment">Business Rules</li>
+                        </ul>               
+                    </section>                  
+                                        
+                    <section>
+                        <h1>API Planning & Design</h1>
+                        <h3>Pragmatic vs. Restful</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Design for Audience</li>
+                            <li class="fragment">Hackable</li>
+                            <li class="fragment">Simplicity</li>
+                            <li class="fragment">Low Barrier to Entry</li>
+                        </ul>               
+                    </section>  
+                    
+                    <section>
+                        <h1>API Planning & Design</h1>
+                        <h3>Focus On</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Meaningful URIs (http://example.com/resources/)</li>
+                            <li class="fragment">Intuitive Parameters(&sort=)</li>
+                            <li class="fragment">Use Your Verbs (GET,POST,PUT,DELETE)</li>
+                            <li class="fragment">Data Formats (XML / JSON)</li>
+                            <li class="fragment">HTTP Codes</li>
+                            <li class="fragment">Error Codes</li>
+                            <li class="fragment">Versioning</li>
+                        </ul>               
+                    </section>  
+                    
+                    <section>
+                        <h1>API Planning & Design</h1>
+                        <h3>APIs Are a Contract</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Self-Service</li>
+                            <li class="fragment">Reliable</li>
+                            <li class="fragment">Stable</li>
+                            <li class="fragment">Life Cycle</li>
+                            <li class="fragment">Backwards Compatible</li>
+                            <li class="fragment">Deprecation</li>
+                        </ul>               
+                    </section>    
+                    
+                    <section>
+                        <h1>API Planning & Design</h1>
+                        <h3>Infrastructure</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li>Caching</li>
+                            <li>Traffic Control</li>
+                            <li>Scalability</li>
+                            <li>Cloud v Internal</li>
+                        </ul>           
+                    </section>      
+                    
+                    <section>
+                        <h1>API Planning & Design</h1>
+                        <h3>Security</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li>User Management</li>
+                            <li>Keys</li>
+                            <li>Basic Auth</li>
+                            <li>oAuth</li>
+                            <li>SSL</li>
+                        </ul>           
+                    </section>   
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/federal-strategy/innovation-fellows/Tag-Cloud-API-Development.png" width="500" />
+                                        
+                    </section>  
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Technology of APIs</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Pragmatic REST</li>
+                            <li class="fragment">JSON / XML</li>
+                            <li class="fragment">Webhooks</li>
+                            <li class="fragment">oEmbed</li>
+                        </ul>           
+                    </section>  
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Business of APIs - Onboarding</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Getting Started Guide</li>
+                            <li class="fragment">Self-Service Registration</li>
+                            <li class="fragment">API Best Practices</li>
+                            <li class="fragment">Frequently Asked Questions (FAQ)</li>
+                        </ul>           
+                    </section>      
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Business of APIs - Documentation</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">List of Endpoints</li>
+                            <li class="fragment">Documentation</li>
+                            <li class="fragment">API Explorer</li>
+                        </ul>           
+                    </section>  
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Business of APIs - Documentation - Explorer</h3>
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist/apigee-api-console.jpg" width="500" />
+                                
+                    </section>  
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Business of APIs - Documentation</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li>List of Endpoints</li>
+                            <li>Documentation</li>
+                            <li>API Explorer</li>
+                            <li class="fragment">Interactive Documentation</li>
+                        </ul>           
+                    </section>  
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Business of APIs - Documentation - Interactive Docs</h3>
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist/iodocs.png" width="500" />
+                                
+                    </section>  
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Business of APIs - Documentation</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li>List of Endpoints</li>
+                            <li>Documentation</li>
+                            <li>API Explorer</li>
+                            <li>Interactive Documentation</li>
+                            <li class="fragment">Error Response Codes</li>
+                        </ul>           
+                    </section>  
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Business of APIs - Code</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Code Libraries</li>
+                            <li class="fragment">Software Development Kits (SDK)</li>
+                            <li class="fragment">Platform Development Kits (PDK)</li>
+                            <li class="fragment">Starter Projects</li>
+                            <li class="fragment">Application Gallery</li>                           
+                        </ul>           
+                    </section>  
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Business of APIs - Mobile</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">iOS</li>
+                            <li class="fragment">Android</li>
+                            <li class="fragment">Windows</li>
+                            <li class="fragment">HTML5</li>
+                            <li class="fragment">Tiggzi</li>
+                        </ul>           
+                    </section>  
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Business of APIs - Mobile</h3>
+                        <img src="https://s3.amazonaws.com/kinlane-productions/federal-strategy/innovation-fellows/Tiggz-Screenshot-4.png" width="750" />
+                                
+                    </section>      
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Business of APIs - Embeddable</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Buttons</li>
+                            <li class="fragment">Badges</li>
+                            <li class="fragment">Widgets</li>
+                        </ul>           
+                    </section>  
+                       
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Business of APIs - Self-Service Support</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Forum</li>
+                            <li class="fragment">Stack Overflow</li>
+                        </ul>           
+                    </section>  
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Business of APIs - Self-Service Support</h3>
+                        <img src="https://s3.amazonaws.com/kinlane-productions/stack-overflow/Stack-Overflow.png" width="750" />
+                                
+                    </section>  
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Business of APIs - Direct Support</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Email</li>
+                            <li class="fragment">Phone</li>
+                            <li class="fragment">Ticket System</li>
+                            <li class="fragment">Office Hours</li>
+                        </ul>           
+                    </section>                                  
+                                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Business of APIs - Communications</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Blog</li>
+                            <li class="fragment">E-Newsletter</li>
+                            <li class="fragment">Facebook</li>
+                            <li class="fragment">Google+</li>
+                            <li class="fragment">LinkedIn</li>
+                            <li class="fragment">Twitter</li>
+                        </ul>           
+                    </section>  
+                            
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Business of APIs - Updates</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Change Log</li>
+                            <li class="fragment">Roadmap</li>
+                            <li class="fragment">Status Dashboard</li>
+                        </ul>           
+                    </section>  
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Business of APIs - Resources</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Case Studies</li>
+                            <li class="fragment">How-To Guides</li>
+                            <li class="fragment">Webinars</li>
+                            <li class="fragment">White Papers</li>
+                        </ul>           
+                    </section>  
+                                                
+
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Business of APIs - Environment</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Sandbox</li>
+                            <li class="fragment">Production</li>
+                        </ul>           
+                    </section>  
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Business of APIs - Developer Account</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Account Settings</li>
+                            <li class="fragment">Application Manager</li>
+                            <li class="fragment">Billing History</li>
+                            <li class="fragment">Developer Dashboard</li>
+                            <li class="fragment">Reset Password</li>
+                            <li class="fragment">Usage Logs & Analytics</li>
+                        </ul>           
+                    </section>                      
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Business of APIs - Discovery</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">WADL</li>
+                            <li class="fragment">Swagger</li>
+                            <li class="fragment">IO Docs</li>
+                            <li class="fragment">Google</li>
+                        </ul>           
+                    </section>  
+                                        
+                    <section>
+                        <h1>API Development</h1>
+                        <br />
+                        <h3>You Probably Don't Have Resources To Do All of That</h3>        
+                        <br />
+                        <h3 class="fragment">But Consider Which Will Best Serve Your Audience!</h3>         
+                    </section>                      
+                
+                                                        
+                            
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>API Service Providers</h3>
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/blog/Tag-Cloud-Service-Provier-2012.png" width="750" />
+                                
+                    </section>  
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>API Service Providers - SOA</h3>
+                        <table cellpadding="1" cellspacing="1" style="padding-left: 375px; padding-top: 0px;">
+                            <tr class="fragment">
+                                <td><img src="https://s3.amazonaws.com/kinlane-productions/api-service-providers/layer7-logo.png" width="150" /></td>
+                            </tr>
+                            <tr class="fragment">
+                                <td><img src="https://s3.amazonaws.com/kinlane-productions/api-service-providers/intel/Intel-IESG-Logo.png" width="150" /></td>
+                            </tr>
+                            <tr class="fragment">
+                                <td><img src="https://s3.amazonaws.com/kinlane-productions/api-service-providers/soa/soa-software-logo.jpeg" width="150" /></td>
+                            </tr>
+                            <tr class="fragment">
+                                <td><img src="https://s3.amazonaws.com/kinlane-productions/api-service-providers/vordel/vordel_logo_100x50.jpg" width="150" /></td>
+                            </tr>
+                        </table>                
+                    </section>  
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>API Service Providers - Web APIs</h3>
+                        <table cellpadding="1" cellspacing="1" style="padding-left: 375px; padding-top: 0px;">
+                            <tr class="fragment">
+                                <td align="center"><img src="https://s3.amazonaws.com/kinlane-productions/api-service-providers/3scale-logo.jpg" width="200" style="padding-right: 75px;" /></td>
+                            </tr>
+                            <tr class="fragment">
+                                <td align="center"><img src="https://s3.amazonaws.com/kinlane-productions/api-service-providers/apigee-logo.gif" width="150" /></td>
+                            </tr>
+                            <tr class="fragment">
+                                <td align="center"><img src="https://s3.amazonaws.com/kinlane-productions/api-service-providers/mashery-logo.png" width="150" /></td>
+                            </tr>
+                        </table>                
+                    </section>      
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>API Service Providers - New Generation</h3>
+                        <table cellpadding="5" cellspacing="5" style="padding-left: 250px; padding-top: 0px; margin-bottom:0px;">
+                            <tr class="fragment">
+                                <td width="200"><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/serviceproviders/apiary-io-logo.png" width="150" /></td>
+                                <td width="200"><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/serviceproviders/apify-logo.png" width="150" /></td>
+                            </tr>
+                            <tr class="fragment">
+                                <td width="200"><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/serviceproviders/APIphany-Logo.png" width="150" /></td>
+                                <td width="200"><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/serviceproviders/emergent-one-logo.png" width="110" /></td>
+                            </tr>   
+                            <tr class="fragment">
+                                <td width="200"><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/serviceproviders/mashape-logo.png" width="150" /></td>
+                                <td width="200"><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/serviceproviders/socrata_logo.jpg" width="150" /></td>
+                            </tr>                                                                                   
+                        </table>                
+                    </section>  
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>API Service Providers</h3>
+                        <br />
+                        <h3>Proxy vs. Connector</h3>    
+                        <table cellpadding="1" cellspacing="1" style="padding-left: 340px; padding-top: 0px;">
+                            <tr class="fragment">
+                                <td align="center" style="padding-right: 75px;"><img src="https://s3.amazonaws.com/kinlane-productions/api-service-providers/3scale-logo.jpg" width="220" /></td>
+                            </tr>
+                        </table>                                
+                    </section>                      
+                            
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>API Service Providers - Open Source</h3>
+                        <table cellpadding="1" cellspacing="1" style="padding-left: 375px; padding-top: 0px;">
+                            <tr class="fragment">
+                                <td align="center"><img src="https://s3.amazonaws.com/kinlane-productions/api-service-providers/api-axle-logo.png" width="150" /></td>
+                            </tr>
+                            <tr class="fragment">
+                                <td align="right"><img style="padding-left: 25px;" src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/serviceproviders/wso2-logo.jpeg" width="120" /></td>
+                            </tr>
+                        </table>                
+                    </section>  
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Tools for Deploying APIs - Frameworks</h3>
+                        <table cellpadding="5" cellspacing="5" style="padding-left: 150px; padding-top: 0px; margin-bottom:0px;">
+                            <tr>
+                                <td width="200"><img style="padding-left: 50px;" src="https://s3.amazonaws.com/kinlane-productions/programming-languages/Adobe_ColdFusion_10_icon.png" width="50" /></td>
+                                <td width="200"><img style="padding-left: 50px;" src="https://s3.amazonaws.com/kinlane-productions/programming-languages/java.png" width="50" /></td>
+                                <td width="200"><img src="https://s3.amazonaws.com/kinlane-productions/programming-languages/javascript-logo.png" width="150" /></td>
+                            </tr>
+                            <tr>                                
+                                <td width="200"><img src="https://s3.amazonaws.com/kinlane-productions/programming-languages/microsoft-net.png" width="90" /></td>
+                                <td width="200"><img src="https://s3.amazonaws.com/kinlane-productions/programming-languages/nodejs.png" width="135" /></td>
+                                <td width="200"><img src="https://s3.amazonaws.com/kinlane-productions/programming-languages/php.png" width="130" /></td>
+                            </tr>       
+                            <tr>
+                                <td width="200"><img src="https://s3.amazonaws.com/kinlane-productions/programming-languages/python-logo.png" width="150" /></td>
+                                <td width="200"><img style="padding-left: 50px;" src="https://s3.amazonaws.com/kinlane-productions/programming-languages/ruby-logo.png" width="70" /></td>
+                            </tr>                                                                                                           
+                        </table>                
+                    </section>  
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Tools for Deploying APIs - Swagger</h3>
+                        
+                        <table cellpadding="0" cellspacing="0" style="padding: 0px; margin:0px; padding-left: 150px;">
+                            <tr>
+                                <td valign="top">
+                                    <table>
+                                        <tr>
+                                            <td style="vertical-align: top; padding-left: 35px;">
+                                                <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/swagger/Swagger-Logo.png" />
+                                            </td>
+                                        </tr>           
+                                        <tr>                                
+                                            <td><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/swagger/swagger-api-definition.png" /></td>
+                                        </tr>                                                                                                               
+                                    </table>
+                                </td>                               
+                                <td valign="top" style="vertical-align: top; padding-left: 35px;">
+                                    <table>
+                                        <tr class="fragment">
+                                            <td align="center"><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/swagger/api-server.png" width="180" /></td>
+                                        </tr>           
+                                        <tr class="fragment">                               
+                                            <td><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/swagger/swagger-docs-2.png" width="400" /></td>
+                                        </tr>       
+                                        <tr class="fragment">                               
+                                            <td align="center">
+                                                <img src="https://s3.amazonaws.com/kinlane-productions/programming-languages/java.png" width="35" />
+                                                <img src="https://s3.amazonaws.com/kinlane-productions/programming-languages/objective-c-logo.jpeg" width="70" />
+                                                <img src="https://s3.amazonaws.com/kinlane-productions/programming-languages/php.png" width="70" />
+                                                <img src="https://s3.amazonaws.com/kinlane-productions/programming-languages/python-logo.png" width="95" />
+                                                <img src="https://s3.amazonaws.com/kinlane-productions/programming-languages/ruby-logo.png" width="35" />
+                                            </td>
+                                        </tr>                                                                                                                                                   
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>                        
+        
+                    </section>                    
+
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Services for Deploying APIs - PaaS</h3>
+                        <table cellpadding="1" cellspacing="1" style="padding-left: 375px; padding-top: 0px;">
+                            <tr class="fragment">
+                                <td align="center"><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/drupal/drupal_logo.jpeg" width="150" /></td>
+                            </tr>
+                            <tr class="fragment">
+                                <td align="center"><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/heroku/heroku-logo.png" width="190" /></td>
+                            </tr>                           
+                            <tr class="fragment">
+                                <td align="center"><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/salesforce/salesforce-logo.png" width="150" /></td>
+                            </tr>
+                            <tr class="fragment">
+                                <td align="center"><img src="https://s3.amazonaws.com/kinlane-productions/wordpress/Wordpress-logo.png" width="190" /></td>
+                            </tr>                                                       
+                        </table>                
+                    </section>      
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Services for Deploying APIs - BaaS</h3>
+                        <table cellpadding="1" cellspacing="1" style="padding-left: 375px; padding-top: 0px;">
+                            <tr class="fragment">
+                                <td align="center" style="padding-left: 25px;"><img src="http://kinlane-productions.s3.amazonaws.com/mbaas-providers/cloudmine-logo.png" width="150" /></td>
+                            </tr>
+                            <tr class="fragment">
+                                <td align="center"><img src="http://kinlane-productions.s3.amazonaws.com/mbaas-providers/kinvey-logo.png" width="190" /></td>
+                            </tr>                           
+                            <tr class="fragment">
+                                <td align="center"><img src="http://kinlane-productions.s3.amazonaws.com/mbaas-providers/Parse-Logo.png" width="190" /></td>
+                            </tr>                                                       
+                        </table>                
+                    </section>  
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Platforms for Management & Support APIs</h3>
+                        <table cellpadding="5" cellspacing="5" style="padding-left: 275px; padding-top: 0px; margin-bottom:0px;">
+                            <tr class="fragment">
+                                <td width="200"><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/serviceproviders/googlegroups_logo.gif" width="150" /></td>
+                                <td width="200"><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/loggly/loggly.png" width="150" /></td>
+                            </tr>
+                            <tr class="fragment">
+                                <td><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/mixpanel/mixpanel-logo.jpeg" width="150" /></td>
+                                <td><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/reportgripd/reportgrid.png" width="150" /></td>
+                            </tr>                               
+                            <tr class="fragment">                               
+                                <td><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/superfeedr-logo.png" width="150" /></td>
+                                <td><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/stackoverflow/stackoverflow-logo.png" width="150" /></td>
+                            </tr>       
+                            <tr class="fragment">
+                                <td><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/uservoice/UserVoice_logo.png" width="150" /></td>
+                                <td><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/zendesk/zendesk_logo.png" width="150" /></td>
+                            </tr>                                                                                                                                                               
+                        </table>                
+                    </section>  
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Tools for Managing APIs - Github</h3>
+                        <p align="center"><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/github/github-logo-text-horizontal.png" width="200" /></p>
+                        <table cellpadding="0" cellspacing="0" style="padding: 0px; margin:0px; padding-left: 200px;">
+                            <tr>
+                                <td valign="top">
+                                    <ul style="font-size: 18px; padding-top: 10px;">
+                                        <li class="fragment">Design and Code</li>
+                                        <li class="fragment">Documentation</li>
+                                        <li class="fragment">Software development kits (SDK)</li>
+                                        <li class="fragment">Code Samples (Gists)</li>
+                                        <li class="fragment">Developer Authentication</li>
+                                        <li class="fragment">Developer Profiling</li>
+                                    </ul>                                   
+                                </td>                               
+                                <td valign="top" style="vertical-align: top; padding-left: 35px;">
+                                    <ul style="font-size: 18px; padding-top: 10px;">
+                                        <li class="fragment">Presentations and Guides</li>
+                                        <li class="fragment">Issue Management</li>
+                                        <li class="fragment">Roadmaps</li>
+                                        <li class="fragment">Hackathons</li>
+                                        <li class="fragment">Developer Authentication</li>
+                                        <li class="fragment">TOS, Privacy, and Branding</li>
+                                    </ul>                                       
+                                </td>
+                            </tr>
+                        </table>                        
+        
+                    </section>  
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Politics of APIs</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Education</li>
+                            <li class="fragment">Investment</li>
+                            <li class="fragment">Budgets</li>
+                            <li class="fragment">Data Ownership</li>
+                            <li class="fragment">Data Retention</li>
+                            <li class="fragment">Terms of Use</li>
+                            <li class="fragment">Privacy</li>
+                            <li class="fragment">Branding</li>
+                        </ul>           
+                    </section>      
+                    
+                    <section>
+                        <h1>API Development</h1>
+                        <h3>Politics of APIs</h3>
+                        <br />
+                        <h3 class="fragment">We Are Still Studying...</h3>
+                        <br />
+                        <h3 class="fragment">And Understanding the Politics of APIs!</h3>                                       
+                    </section>                              
+  
+                    <section>
+                        <h1>API Operations</h1>
+                        <h3>Iterate</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Rapid Cycles</li>
+                            <li class="fragment">Keep Active</li>
+                            <li class="fragment">Innovate</li>
+                            <li class="fragment">Try New Things</li>
+                            <li class="fragment">Don't Be Afraid to Fail</li>
+                            <li class="fragment">Measure</li>
+                            <li class="fragment">Feedback Loop</li>
+                        </ul>           
+                    </section>  
+
+                    <section>
+                        <h1>API Operations</h1>
+                        <h3>Eat Your Own Dog Food</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Website</li>
+                            <li class="fragment">Prototypes</li>
+                            <li class="fragment">Web & Mobile</li>
+                            <li class="fragment">Starter Kits</li>
+                            <li class="fragment">White Label</li>
+                        </ul>           
+                    </section>  
+                    
+                    <section>
+                        <h1>API Operations</h1>
+                        <h3>Consume Other APIs</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Mashup</li>
+                            <li class="fragment">Partner</li>
+                            <li class="fragment">Experience</li>
+                            <li class="fragment">Beyond Your Silo</li>
+                            <li class="fragment">Experience the Pain</li>
+                        </ul>           
+                    </section>  
+
+                    <section>
+                        <h1>Whats Next for APIs?</h1>
+                        <h3>Technology</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Subscribe (pubsubhubbub)</li>
+                            <li class="fragment">Real-Time (webhooks / push)</li>
+                            <li class="fragment">Websockets</li>
+                            <li class="fragment">Hundreds of Devices</li>
+                            <li class="fragment">Sensors</li>
+                            <li class="fragment">Quantified Self</li>
+                            <li class="fragment">Voice</li>
+                        </ul>           
+                    </section>  
+                    
+                    <section>
+                        <h1>Whats Next for APIs?</h1>
+                        <h3>Approaches</h3>
+                        <table cellpadding="1" cellspacing="1" style="padding-left: 250px; padding-top: 0px;">
+                            <tr class="fragment">
+                                <td align="center"><img src="https://s3.amazonaws.com/kinlane-productions/federal-strategy/innovation-fellows/Automation-Like-IFTTT.jpg" width="400" /></td>
+                            </tr>
+                            <tr class="fragment">
+                                <td align="center"><img src="https://s3.amazonaws.com/kinlane-productions/federal-strategy/innovation-fellows/aggregation-like-singly.png" width="400" /></td>
+                            </tr>
+                            <tr class="fragment">
+                                <td align="center"><img src="https://s3.amazonaws.com/kinlane-productions/federal-strategy/innovation-fellows/languages-like-webshell.jpg" width="400" /></td>
+                            </tr>                                                                                                           
+                        </table>                
+                    </section>  
+                    
+                    <section>
+                        <h1>Whats Next for APIs?</h1>
+                        <br />
+                        <h3>We'll Move Beyond Single Use API Calls for Communicating</h3>       
+                        <br />
+                        <h3 class="fragment">And Learn to Fluently Communicate With Many APIs</h3>          
+                    </section>      
+                    
+                    <section>
+                        <h1>APIs</h1>
+                        <h3>Leave You With a Few Thoughts...</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">APIs Are More Than Tech</li>
+                            <li class="fragment">APIs Require a Business Approach</li>
+                            <li class="fragment">Politics Can Be Biggest Killer of APIs</li>
+                            <li class="fragment">Focus Delivering Value.</li>
+                        </ul>           
+                    </section>      
+                                                                                                                
+
+                    <section>
+                        <h1>The End</h1>
+                        <br />
+                        <h4>By Kin Lane (@kinlane)</h4>
+                        <br />
+                        <p align="center"><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist/api-evangelist-logo-400.png" width="300" /></p>
+                    </section>              
+                    
+                </div>
+    
+                <!-- The navigational controls UI -->
+                <aside class="controls">
+                    <a class="left" href="#">&#x25C4;</a>
+                    <a class="right" href="#">&#x25BA;</a>
+                    <a class="up" href="#">&#x25B2;</a>
+                    <a class="down" href="#">&#x25BC;</a>
+                </aside>
+    
+                <!-- Presentation progress bar -->
+                <div class="progress"><span></span></div>
+                
+            </div>
+            
+            <script src="http://kinlane.github.com/talks/lib/js/head.min.js"></script>
+            <script src="http://kinlane.github.com/talks/javascripts/reveal.min.js"></script>
+    
+            <script>
+                
+                // Full list of configuration options available here:
+                // https://github.com/hakimel/reveal.js#configuration
+                Reveal.initialize({
+                    controls: true,
+                    progress: true,
+                    history: true,
+                    
+                    theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
+                    transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+    
+                    // Optional libraries used to extend on reveal.js
+                    dependencies: [
+                        { src: 'http://kinlane.github.com/talks/lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    ]
+                });
+                
+            </script>
+
+    </body>
+</html>
