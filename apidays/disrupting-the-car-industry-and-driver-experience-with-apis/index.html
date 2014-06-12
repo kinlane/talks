@@ -1,0 +1,730 @@
+<!doctype html>  
+<html lang="en">
+
+<head> 
+    <meta charset="utf-8">
+    
+    <title>API Days - San Francisco - Disrupting the Car Industry and Driver Experience with APIs</title>
+
+    <meta name="description" content="A walk through the history of APIs, API design & planning, API development, API evangelism and whats next when it comes to APIs.">
+    <meta name="author" content="Kin Lane">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/main.css">
+    <link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="http://kinlane.github.com/lib/css/zenburn.css">
+
+    <script>
+        // If the query includes 'print-pdf' we'll use the PDF print sheet
+        document.write( '<link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    
+</head>
+        
+        <body>
+            
+            <div class="reveal">
+    
+                <!-- Used to fade in a background when a specific slide state is reached -->
+                <div class="state-background"></div>
+                
+                <!-- Any section element inside of this container is displayed as a slide -->
+                <div class="slides">
+                    
+                    <section>
+                        <h1>Kin Lane</h1>
+                        <h3>API Evangelist</h3>
+                        <br />
+                        <h3>Disrupting the Car Industry and Driver Experience with APIs</h3>
+                        <p align='center'>API Days, San Francisco 2014</p>              
+                        <ul style="font-size: 18px; padding-top: 20px;">
+                            <li class="fragment">Some Quick Background On Myself...</li>
+                            <li class="fragment">25 Years Database Engineer</li>
+                            <li class="fragment">15 Years Web Applications</li>
+                            <li class="fragment">8 Years Cloud Computing</li>
+                            <li class="fragment">4 Years Studying APIs</li>
+                        </ul>               
+                    </section>  
+                    
+                    <section>   
+                        <br /><br />    
+                        <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/api-evangelist-logo-400.png" width="550" align="center" />
+                        <br />                                                       
+                        <p align="center" style="font-size: 24px;">www.apievangelist.com</p>
+                    </section>                      
+                    
+                    <section>
+                        <h1>Focus</h1>
+                        <ul style="font-size: 18px; padding-top: 20px;">
+                            <li>Technology of APIs</li>
+                            <li>Business of APIs</li>
+                            <li>Politics of APIs</li>
+                        </ul>               
+                    </section>    
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png" width="375" />
+                                        
+                    </section>                                        
+                    
+                    <section>
+                        <h1>Target</h1>
+                        <ul style="font-size: 18px; padding-top: 20px;">
+                            <li>Individuals</li>
+                            <li>Startups</li>
+                            <li>SMB</li>
+                            <li>Enterprise</li>
+                            <li>Government</li>
+                        </ul>               
+                    </section>     
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/kin-lane/kinlane-white-house-3-web.jpg" width="350" />
+                                        
+                    </section>   
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/disrupt-car-industry.jpg" width="500" />
+                                        
+                    </section>                      
+                                
+                                
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/no-car-sign.jpg" width="325" />
+                                        
+                    </section>  
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/telecommute.jpg" width="425" />
+                                        
+                    </section>  
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/delivery-man.png" width="325" />
+                                        
+                    </section>   
+                    
+                    <section>
+                        
+                        <br /><br /><br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/fedex-ups-usps.jpg" width="600" />
+                                        
+                    </section> 
+                    
+                    <section>
+                        
+                        <br /><br /><br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/task-rabbit.jpg" width="450" />
+                                        
+                    </section>  
+                    
+                    <section>
+                        
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/the-overly-attached-girlfriend-explains-what-its-like-being-a-wildly-popular-internet-meme.jpg" width="500" />
+                                        
+                    </section>  
+                    
+                    <section>
+                        
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/cast_large_kitty3.jpg" width="550" />
+                                        
+                    </section>    
+                    
+                    <section>
+                        
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/weed-delivery-drone.jpg" width="550" />
+                                        
+                    </section>     
+                    
+                    <section>
+
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-exlamation-point.png" width="150" />
+                                        
+                    </section> 
+                    
+                    <section>
+                        
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/cast_large_kitty3.jpg" width="550" />
+                                        
+                    </section>  
+                    
+                   <section>
+                        
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/the-overly-attached-girlfriend-explains-what-its-like-being-a-wildly-popular-internet-meme.jpg" width="500" />
+                                        
+                    </section>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+                    
+                   <section>
+                        
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/Uber-Escalade.jpg" width="500" />
+                                        
+                    </section>     
+                    
+                   <section>
+                        
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/airplane.jpg" width="500" />
+                                        
+                    </section>   
+                    
+                   <section>
+                        
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/high-speed-train.jpg" width="500" />
+                                        
+                    </section>   
+                    
+                   <section>
+                        
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/hyperloop2.jpg" width="500" />
+                                        
+                    </section>  
+                    
+                   <section>
+                        
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/motorized-suitcase.jpg" width="450" />
+                                        
+                    </section>   
+                    
+                   <section>
+                        
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/avatar-bonding.png" width="600" />
+                                        
+                    </section>   
+                    
+                   <section>
+                        
+                       <h1>World Wide Web<h1>
+                       <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/1989-car.jpg" width="400" /> 
+                       <h1>25 Years!!<h1>
+                                        
+                    </section>  
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/disrupt.jpg" width="500" />
+                                        
+                    </section>                      
+                    
+                   <section>
+                        
+                       <h1>Automotive Industry<h1> 
+                       <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/1894-car.jpg" width="400" /> 
+                       <h1>120 Years!!<h1>
+                                        
+                    </section>   
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/tag-cloud-auto-companies-early.png" width="900" />
+                                        
+                    </section> 
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/tag-cloud-auto-companies-now.png" width="900" />
+                                        
+                    </section>  
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-analytics-5.jpeg" width="300" />
+                                        
+                    </section> 
+                    
+                    <section>
+                        
+                        <br /><br /><h1>$4 Trillion</h1>
+                                        
+                    </section>  
+                    
+                    <section>
+                        
+                        <br /><br /><h1>Employs 5,566,000</h1>
+                                        
+                    </section>  
+                    
+                    <section>
+                        
+                        <br /><br /><h1>Companies 353,486</h1>
+                                        
+                    </section>  
+                    
+                    <section>
+                        
+                        <br /><br /><h1>US Aftermarket $182 Billion</h1>
+                                        
+                    </section>  
+                    
+                   <section>
+
+                       <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/passenger-cars.jpg" width="500" /> 
+                       <br /> 
+                       <h1>Passenger<h1>
+                                        
+                    </section>  
+                    
+                   <section>
+
+                       <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/light-duty-mercedes.jpg" width="400" /> 
+                       <br /> 
+                       <h1>Light Duty<h1>
+                                        
+                    </section>  
+                    
+                   <section>
+
+                       <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/heavy-truc.jpg" width="400" /> 
+                       <br /> 
+                       <h1>Heavy Duty<h1>
+                                        
+                    </section>  
+                    
+                   <section>
+
+                       <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/buses.jpg" width="500" /> 
+                       <br /> 
+                       <h1>Buses<h1>
+                                        
+                    </section> 
+                    
+                   <section>
+
+                       <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/automobile-expert.png" width="500" /> 
+                       <br /> 
+                       <h1>Domain Experts<h1>
+                                        
+                    </section>
+                    
+                   <section>
+
+                       <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/thousand-pound-gorilla.jpg" width="500" /> 
+                       <h1>1000 lb Gorillas<h1>
+                                        
+                    </section>
+                    
+                   <section>
+
+                       <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/insurance-industry.jpg" width="500" /> 
+                       <br /> 
+                       <h1>Insurance Industry<h1>
+                                        
+                    </section>
+                    
+                   <section>
+
+                       <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/oil-gas-industry.jpg" width="350" /> 
+                       <br /> 
+                       <h1>Oil & Gas Industry<h1>
+                                        
+                    </section>   
+                    
+                   <section>
+
+                       <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/alternative-fuels.jpg" width="500" />
+                       <br />  
+                       <h1>Alternative Energy<h1>
+                                        
+                    </section>  
+                    
+                   <section>
+
+                       <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/Big-Wheel-Gear-Clock_FA2434C7.jpg" width="300" />
+                       <br />  
+                       <h1>Longer cycles<h1>
+                                        
+                    </section> 
+                    
+                   <section>
+
+                       <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/car_ownership_costs_covo_lg.jpg" width="500" />
+                       <br />  
+                       <h1>Ownership<h1>
+                                        
+                    </section> 
+                    
+                   <section>
+
+                       <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/car-rental.jpg" width="500" />
+                       <br /> <br /> 
+                       <h1>Rental<h1>
+                                        
+                    </section> 
+                    
+                   <section>
+
+                       <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/zipcar-electric.jpg" width="400" />
+                       <br />  
+                       <h1>Shared<h1>
+                                        
+                    </section> 
+                    
+                   <section>
+
+                       <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/route-66.jpeg" width="300" />
+                       <br />  
+                       <h1>Passionate Views<h1>
+                                        
+                    </section> 
+   
+                   <section>
+
+                       <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/youth-bus.jpg" width="400" />
+                       <br />  
+                       <h1>Apathetic Views<h1>
+                                        
+                    </section>  
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/telecommute.jpg" width="425" />
+                        <br />  
+                       <h1>Telecommute<h1>
+                                                                   
+                    </section>                      
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/emerging-markets.png" width="750" />
+                        <br />  
+                       <h1>Emerging Markets<h1>
+                                                                   
+                    </section>  
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/public-transit.jpg" width="350" />
+                                                                   
+                    </section>  
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/vehicle-to-vehicle.jpg" width="525" />
+                        <br />  
+                       <h1>Vehicle to Vehicle<h1>
+                                                                   
+                    </section>  
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/google-self-driving-car.jpg" width="525" />
+                        <br />  
+                       <h1>Self-Driving Cars<h1>
+                                                                   
+                    </section>                                                                                  
+                                       
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/parking-meters.jpeg" width="525" />
+                        <br />  
+                       <h1>Parking Meters<h1>
+                                                                   
+                    </section>  
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/parking-lots.jpg" width="525" />
+                        <br />  
+                       <h1>Parking Lots<h1>
+                                                                   
+                    </section>  
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/toll-road.jpg" width="425" />
+                        <br />  
+                       <h1>Toll Roads & Bridges<h1>
+                                                                   
+                    </section>  
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/traffic.jpeg" width="525" />
+                        <br />  
+                       <h1>Traffic<h1>
+                                                                   
+                    </section>   
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/weather.jpg" width="525" />
+                        <br />  
+                       <h1>Weather<h1>
+                                                                   
+                    </section>  
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/car-safety-and-children.jpg" width="425" />
+                        <br />  
+                       <h1>Safety<h1>
+                                                                   
+                    </section>  
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/top-four-lobbying-industries.jpg" width="525" />
+                        <br />  
+                       <h1>Regulated<h1>
+                                                                   
+                    </section>                                                                                                                                                                
+                                
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/Vehicle-Data-Recorder-Vehicle-DVR-Car-Video-Recorder-Automobile-Black-Box-Night-Vision-25-Inch-Screen-198F_3309061_a.jpg" width="350" />
+                        <br />  
+                       <h1>Vehicle Data Recorder<h1>
+                                                                   
+                    </section>  
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/big-data.png" width="525" />
+                        <br />  
+                       <h1>Big Data<h1>
+                                                                   
+                    </section>  
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/big-brother.jpg" width="525" />
+                        <br />  
+                       <h1>Big Brother<h1>
+                                                                   
+                    </section>    
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/home.jpeg" width="525" />
+                        <br />  
+                       <h1>Know When You Are Home<h1>
+                                                                   
+                    </section>  
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/work.jpg" width="425" />
+                        <br />  
+                       <h1>Know When You Are At Work<h1>
+                                                                   
+                    </section>  
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-question-mark.png" width="300" />
+                        <br />  <br />
+                       <h1>Know When You Are Not!<h1>
+                                                                   
+                    </section>    
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/dude-flying.jpg" width="550" />
+                        <br />  
+                       <h1>Big Picture!<h1>
+                                                                   
+                    </section>   
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/Snoop-Lion-Smoking-Weed.png.jpg" width="550" />
+                        <br />  
+                       <h1>High On Disruption!<h1>
+                                                                   
+                    </section>  
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/obstacle1.jpg" width="550" />
+                        <br />  
+                       <h1>Obstacles<h1>
+                                                                   
+                    </section>                       
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/tag-cloud-iot.png" width="600" />
+                        <br />  <br />
+                       <h1>Technology of APIs<h1>
+                                                                                              
+                    </section> 
+
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/Tag-Cloud-Business-of-APIs.png" width="700" />
+                        <br /> <br />  
+                       <h1>Business of APIs<h1>
+                                                                   
+                    </section>  
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/Tag-Cloud-Politics-of-APIs-2.png" width="700" />
+                        <br />  <br /> 
+                       <h1>Politics of APIs<h1>
+                                                                   
+                    </section> 
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/tag-cloud-pioneers.png" width="700" />
+                        <br />  <br />
+                       <h1>Pioneers<h1>
+                                                                                              
+                    </section>                     
+                    
+                    <section>
+                        
+                        <h2>Simplicity</h2>
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-ying-yang.png" width="250" />        
+          
+                    </section>                         
+                    
+                    <section>
+                        
+                        <h2>Easy, Low Cost Access To Resources</h2>
+                        <br /><br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-key.png" width="325" />       
+              
+                    </section> 
+                    
+                    <section>
+                        
+                        <h2>Working Together (Community)</h2>
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-knowledge-transfer.png" width="300" />                
+              
+                    </section>   
+                                      
+                    
+                    <section>                       
+                        
+                        <h2>Permissive Terms of Service</h2>
+                        <br />
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-terms-conditions.png" width="300" />
+                                        
+                    </section> 
+                    
+                    <section>
+                        
+                        <h2>Data Ownership</h2>
+                        <br />
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-data-license.png" width="300" />
+                                        
+                    </section>                     
+                    
+                    <section>
+                        
+                        <h2>Operational Transparency</h2>
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-windows.jpg" width="325" />                
+              
+                    </section>  
+                    
+                    <section>
+                        
+                        <h2>Respect Privacy</h2>
+                        <br />
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-privacy.png" width="425" />
+                                        
+                    </section> 
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/car-safety-and-children.jpg" width="425" />
+                        <br />  
+                       <h1>Safety<h1>
+                                                                   
+                    </section>    
+                    
+                    <section>
+                        
+                        <h2>Most Valuable Assets</h2>
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/kin-lane/kin-kaia.png" width="350" />                
+              
+                    </section>  
+                                
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/events/api-days-san-francisco-2014/disrupt-car-industry.jpg" width="500" />
+                                        
+                    </section>                                                                                                                                                                                                                                                                                                                                                            
+
+                    <section>
+                        <h1>The End</h1>
+                        <br />
+                        <h4>By Kin Lane (@kinlane)</h4>
+                        <br />
+                        <p align="center"><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist/api-evangelist-logo-400.png" width="300" /></p>
+                    </section>              
+                    
+                </div>
+    
+                <!-- The navigational controls UI -->
+                <aside class="controls">
+                    <a class="left" href="#">&#x25C4;</a>
+                    <a class="right" href="#">&#x25BA;</a>
+                    <a class="up" href="#">&#x25B2;</a>
+                    <a class="down" href="#">&#x25BC;</a>
+                </aside>
+    
+                <!-- Presentation progress bar -->
+                <div class="progress"><span></span></div>
+                
+            </div>
+            
+            <script src="http://kinlane.github.com/talks/lib/js/head.min.js"></script>
+            <script src="http://kinlane.github.com/talks/javascripts/reveal.min.js"></script>
+    
+            <script>
+                
+                // Full list of configuration options available here:
+                // https://github.com/hakimel/reveal.js#configuration
+                Reveal.initialize({
+                    controls: true,
+                    progress: true,
+                    history: true,
+                    
+                    theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
+                    transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+    
+                    // Optional libraries used to extend on reveal.js
+                    dependencies: [
+                        { src: 'http://kinlane.github.com/talks/lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    ]
+                });
+                
+            </script>
+
+    </body>
+</html>
