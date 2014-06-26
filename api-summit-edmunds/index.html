@@ -1,0 +1,614 @@
+<!doctype html>  
+<html lang="en">
+
+<head> 
+    <meta charset="utf-8">
+    
+    <title>APIs Summit</title>
+
+    <meta name="description" content="A walk through the history of APIs, API design & planning, API development, API evangelism and whats next when it comes to APIs.">
+    <meta name="author" content="Kin Lane">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/main.css">
+    <link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="http://kinlane.github.com/lib/css/zenburn.css">
+
+    <script>
+        // If the query includes 'print-pdf' we'll use the PDF print sheet
+        document.write( '<link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    
+</head>
+        
+        <body>
+        	
+			<div class="reveal">
+	
+				<!-- Used to fade in a background when a specific slide state is reached -->
+				<div class="state-background"></div>
+				
+				<!-- Any section element inside of this container is displayed as a slide -->
+				<div class="slides">
+					
+					<section>
+						<h1>Kin Lane</h1>
+						<h3>API Evangelist</h3>
+						<br />
+						<p align='center'>APIs Summit @ Edmunds.com</p>
+						<br />
+						<p align='center'>June 2014</p>
+						<ul style="font-size: 18px; padding-top: 20px;">
+							<li class="fragment">25 Years Database Engineer</li>
+							<li class="fragment">15 Years Web Applications</li>
+							<li class="fragment">8 Years Cloud Computing</li>
+							<li class="fragment">4 Years Studying APIs</li>
+						</ul>				
+					</section>						
+					
+                    <section>   
+                        <br /><br />    
+                        <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/api-evangelist-logo-400.png" width="550" align="center" />
+                        <br />                                                       
+                        <p align="center" style="font-size: 24px;">www.apievangelist.com</p>
+                    </section>                      
+                    
+                    <section>
+                        <h1>Focus</h1>
+                        <ul style="font-size: 18px; padding-top: 20px;">
+                            <li>Technology of APIs</li>
+                            <li>Business of APIs</li>
+                            <li>Politics of APIs</li>
+                        </ul>               
+                    </section>    
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png" width="375" />
+                                        
+                    </section>                                        
+                    
+                    <section>
+                        <h1>Target</h1>
+                        <ul style="font-size: 18px; padding-top: 20px;">
+                            <li>Individuals</li>
+                            <li>Startups</li>
+                            <li>SMB</li>
+                            <li>Enterprise</li>
+                            <li>Government</li>
+                        </ul>               
+                    </section>     
+                    
+                    <section>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/kin-lane/kinlane-white-house-3-web.jpg" width="350" />
+                                        
+                    </section>   
+                    
+                    <section>
+
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api.png" width="250" />
+                        <br /><br /><br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-happy-face.jpeg" width="250" />
+                                        
+                    </section>                      
+                    
+                    <section>
+                        
+                        <h2>APIs Are Delivering</h2>
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-deliver.png" width="450" />
+                                        
+                    </section>                     
+                    
+                    <section>
+                        
+                        <h2>Websites</h2>
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-website.png" width="300" />
+                                        
+                    </section>   
+                    
+                    <section>
+                        
+                        <h2>Mobile</h2>
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-iphone.png" width="175" />
+                                        
+                    </section>   
+                    
+                    <section>
+                        
+                         <h2>Tablets</h2>
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-tablet.png" width="350" />
+                                        
+                    </section> 
+                    
+                    <section>
+                        
+                         <h2>Data Analysis and Visualizations</h2>
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-data-analysis.png" width="350" />
+                                        
+                    </section>                     
+
+                    <section>
+                        <h1>History of APIs</h1>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/federal-strategy/innovation-fellows/Tag-Cloud-History-of-APIs.png" width="500" />
+                                        
+                    </section>                                       											
+
+					<section>
+						<h1>History of APIs</h1>
+						<h3>Commerce</h3>
+						<ul style="font-size: 18px; padding-top: 10px;">
+							<li>Salesforce (CRM)</li>
+							<li>eBay (Auctions)</li>
+							<li>Amazon (Products)</li>
+							<li>Paypal (Payments)</li>
+						</ul>				
+					</section>													
+
+					<section>
+						<h1>History of APIs</h1>
+						<h3>Social</h3>
+						<ul style="font-size: 18px; padding-top: 10px;">
+							<li>Flickr (Images)</li>
+							<li>Delicious (Bookmarks)</li>
+							<li>Twitter (Posts, Friends, Images, etc)</li>
+							<li>Facebook (Posts, Friends, Images, etc)</li>
+						</ul>				
+					</section>	
+					
+					<section>
+						<h1>History of APIs</h1>
+						<h3>Cloud / Infrastructure</h3>
+						<ul style="font-size: 18px; padding-top: 10px;">
+							<li>Amazon S3 (Storage)</li>
+							<li>Amazon EC2 (Compute)</li>
+							<li>Amazon SimpleDB (Data)</li>
+							<li>Amazon RDS (Database)</li>
+						</ul>				
+					</section>		
+					
+					<section>
+						<h1>History of APIs</h1>
+						<h3>Mobile</h3>
+						<ul style="font-size: 18px; padding-top: 10px;">
+							<li>Instagram (Photos)</li>
+							<li>Foursquare (Local)</li>
+							<li>Pandora (Music)</li>
+							<li>Twilio (SMS)</li>
+						</ul>				
+					</section>	
+					
+                    <section>
+                        <h1>History of APIs</h1>
+                        <h3>Why Is It Working?</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li class="fragment">Built on HTTP</li>
+                            <li class="fragment">Simplicity</li>
+                            <li class="fragment">Light-Weight</li>
+                            <li class="fragment">Hackable</li>
+                            <li class="fragment">Distributed</li>
+                            <li class="fragment">External / Internal</li>
+                            <li class="fragment">Read / Write</li>
+                            <li class="fragment">Self-Service</li>
+                            <li class="fragment">Any Object, Not Just Content</li>
+                        </ul>               
+                    </section>                      
+                    
+                    <section>
+                        <h1>History of APIs</h1>
+                        <h3>Three Essential Ingredients</h3>
+                        <ul style="font-size: 18px; padding-top: 10px;">
+                            <li>Social</li>
+                            <li>Cloud</li>
+                            <li>Mobile</li>
+                        </ul>               
+                    </section> 
+                    
+                    <section>                       
+                        
+                        <h2>What We Have Learned</h2>
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-question-mark.png" width="250" />
+                                        
+                    </section>                      	
+
+                    <section>
+                        
+                        <h2>Technology of APIs</h2>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/Tag-Cloud-Tech-of-APIs.png" width="750" />
+                                        
+                    </section>                    				
+
+                    <section>
+                        
+                        <h2>Technology of APIs</h2>
+                        <br /><br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-pragmatic-rest.png" width="500" />
+                                        
+                    </section>
+                    
+                    <section>
+                        
+                        <h2>Technology of APIs</h2>
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-json-xml.png" width="300" />
+                                        
+                    </section>
+                    
+                    <section>
+                        
+                        <h2>Technology of APIs</h2>
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/oauth-logo.png" width="250" />
+                                        
+                    </section>   
+                    
+                    <section>
+                        
+                        <h2>Technology of APIs</h2>
+                        <br /><h3>Webhooks</h3>
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/webhooks.png" width="250" />
+                                        
+                    </section>                                                          
+	
+                    <section>
+                        
+                        <h2>Business of APIs</h2>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/Tag-Cloud-Business-of-APIs.png" width="750" />
+                                        
+                    </section>
+                    
+                    
+                    <section>
+                        
+                        <h2>Developer Portal</h2>
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-portal-developers.jpg" width="300" />
+                                        
+                    </section>                        
+
+                    <section>
+                        
+                        <h2>Business of APIs</h2>
+                        <br />
+                        <h3>Self-Service</h3>
+                        
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-hand-wrench.jpg" width="350" />
+                                        
+                    </section>
+                    
+                    <section>
+                        
+                        <h2>Business of APIs</h2>
+                        <br />
+                        <h3>Documentation</h3>
+                        
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-documentation-interactive.png" width="230" />
+                                        
+                    </section>  
+                    
+                    <section>
+                        
+                        <h2>Business of APIs</h2>
+                        <br />
+                        <h3>Code Samples</h3>
+                        
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-code.png" width="260" />
+                                        
+                    </section>    
+                    
+                    <section>
+                        
+                        <h2>Business of APIs</h2>
+                        <br />
+                        <h3>Communication</h3>
+                        
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-blog-icon.png" width="200" />
+                                        
+                    </section>  
+                    
+                    <section>
+                        
+                        <h2>Business of APIs</h2>
+                        <br />
+                        <h3>Access Tiers</h3>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-stairs.png" width="250" />
+                                        
+                    </section>  
+                    
+                    <section>
+                        
+                        <h2>Business of APIs</h2>
+                        <br />
+                        <h3>Showcase</h3>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-light-bulb-bright.png" width="250" />
+                                        
+                    </section>   
+                    
+                    <section>
+                        
+                        <h2>Evangelism and Storytelling</h2>
+                        <br />
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-story.png" width="325" />
+                                        
+                    </section>                      
+                    
+                    <section>
+                        
+                        <h2>Business of APIs</h2>
+                        <br />
+                        <h3>Analytics</h3>
+                        
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-analytics-2.png" width="250" />
+                                        
+                    </section>    
+                    
+                    <section>
+                        
+                        <h2>Business of APIs</h2>
+                        <br />
+                        <h3>Embeddable</h3>
+                        
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-widget.png" width="250" />
+                                        
+                    </section>  
+                    
+                    <section>
+                        <h1>API Politics</h1>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/Tag-Cloud-Politics-of-APIs-2.png" width="700" />
+                                        
+                    </section> 
+                    
+                    <section>
+                        
+                        <h2>Politics of APIs</h2>
+                        <br />
+                        <h3>Terms of Service</h3>
+                        
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-terms-conditions.png" width="215" />
+                                        
+                    </section>   
+                    
+                    <section>
+                        
+                        <h2>Politics of APIs</h2>
+                        <br />
+                        <h3>Privacy Policy</h3>
+                        
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-privacy.png" width="250" />
+                                        
+                    </section>   
+                    
+                    <section>
+                        
+                        <h2>Politics of APIs</h2>
+                        <br />
+                        <h3>Service Level Agreements</h3>
+                        
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-handshake.jpg" width="250" />
+                                        
+                    </section>    
+                    
+                    <section>
+                        
+                        <h2>Politics of APIs</h2>
+                        <br />
+                        <h3>Support</h3>
+                        
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-ticket-system.png" width="210" />
+                                        
+                    </section> 
+                    
+                    <section>
+                        
+                        <h2>Politics of APIs</h2>
+                        <br />
+                        <h3>Content License</h3>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-creative-commons.png" width="325" />
+                                        
+                    </section>                       
+                    
+                    <section>
+                        
+                        <h2>Politics of APIs</h2>
+                        <br />
+                        <h3>Code License</h3>
+                        
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-mit-code-license.png" width="215" />
+                                        
+                    </section>  
+                    
+                    <section>
+                        
+                        <h2>Politics of APIs</h2>
+                        <br />
+                        <h3>Data License</h3>
+                        
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-data-license.png" width="225" />
+                                        
+                    </section>    
+                    
+                    <section>
+                        
+                        <h2>Politics of APIs</h2>
+                        <br />
+                        <h3>Rate Limits</h3>
+                        
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-speed-limit.jpeg" width="175" />
+                                        
+                    </section> 
+                    
+                    <section>
+                        
+                        <h2>Politics of APIs</h2>
+                        <br />
+                        <h3>Availability</h3>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/24-7-365.jpg" width="210" />
+                                        
+                    </section> 
+                    
+                    <section>
+                        
+                        <h2>Politics of APIs</h2>
+                        <br />
+                        <h3>Roadmap</h3>
+                        
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-highway.png" width="200" />
+                                        
+                    </section> 
+                    
+                    <section>
+                        
+                        <h2>Politics of APIs</h2>
+                        <br />
+                        <h3>Changelog</h3>
+                        
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-recycling.jpg" width="250" />
+                                        
+                    </section>                                           
+                    
+                    <section>
+                        
+                        <h2>Politics of APIs</h2>
+                        <br />
+                        <h3>Deprecation</h3>
+                        
+                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-deprecation.png" width="200" />
+                                        
+                    </section>  
+                    
+                    <section>
+                        
+                        <h2>Politics of APIs</h2>
+                        <br />
+                        <h3>Budget</h3>
+                        
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-dollar-sign.png" width="175" />
+                                        
+                    </section> 		
+                    
+                    <section>
+
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/tech-biz-politics-apis-gears.png" width="1000" />
+                                        
+                    </section>  
+                    
+                    <section>                      
+                        
+                        <h2>Modular Resources</h2>
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-shipping-containers.png" width="500" />
+                                        
+                    </section>      
+                    
+                    <section>
+                        
+                        
+                        <h2>Distributed Resources</h2>
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-global-distribution.png" width="325" />
+                                        
+                    </section>  
+                    
+                    <section>                       
+                        
+                        <h2>Nimbleness and Agility</h2>
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-running.png" width="300" />
+                                        
+                    </section> 
+                    
+                    <section>
+                        
+                        <h2>Easy Access To Resources</h2>
+                        <br /><br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-key.png" width="325" />       
+              
+                    </section>  
+                    
+                    <section>
+                        
+                        <h2>Working Together (Community)</h2>
+                        <br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-knowledge-transfer.png" width="300" />                
+              
+                    </section>                                        
+                    
+                    <section>
+                        
+                        <h2>Innovation</h2>
+                        <br />                       
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-light-bulb-bright.png" width="300" />
+                                        
+                    </section>   
+
+					<section>
+						<h1>The End</h1>
+						<br />
+						<h4>By Kin Lane (@kinlane)</h4>
+						<br />
+						<p align="center"><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist/api-evangelist-logo-400.png" width="300" /></p>
+					</section>				
+					
+				</div>
+	
+				<!-- The navigational controls UI -->
+				<aside class="controls">
+					<a class="left" href="#">&#x25C4;</a>
+					<a class="right" href="#">&#x25BA;</a>
+					<a class="up" href="#">&#x25B2;</a>
+					<a class="down" href="#">&#x25BC;</a>
+				</aside>
+	
+				<!-- Presentation progress bar -->
+				<div class="progress"><span></span></div>
+				
+			</div>
+			
+            <script src="http://kinlane.github.com/talks/lib/js/head.min.js"></script>
+            <script src="http://kinlane.github.com/talks/javascripts/reveal.min.js"></script>
+    
+            <script>
+                
+                // Full list of configuration options available here:
+                // https://github.com/hakimel/reveal.js#configuration
+                Reveal.initialize({
+                    controls: true,
+                    progress: true,
+                    history: true,
+                    
+                    theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
+                    transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+    
+                    // Optional libraries used to extend on reveal.js
+                    dependencies: [
+                        { src: 'http://kinlane.github.com/talks/lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    ]
+                });
+                
+            </script>
+
+    </body>
+</html>
