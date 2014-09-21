@@ -1,0 +1,317 @@
+
+<!doctype html>  
+<html lang="en">
+
+<head> 
+    <meta charset="utf-8">
+    
+    <title>APIs and Big Data in AWS</title>
+
+    <meta name="description" content="A walk through the history of APIs, API design & planning, API development, API evangelism and whats next when it comes to APIs.">
+    <meta name="author" content="Kin Lane">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/main.css">
+    <link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="http://kinlane.github.com/lib/css/zenburn.css">
+
+    <script>
+        // If the query includes 'print-pdf' we'll use the PDF print sheet
+        document.write( '<link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    
+</head>
+        
+        <body>
+            
+            <div class="reveal">
+    
+                <!-- Used to fade in a background when a specific slide state is reached -->
+                <div class="state-background"></div>
+                
+                <!-- Any section element inside of this container is displayed as a slide -->
+                <div class="slides">
+                    
+                                        
+						                    
+                    		<section><h1>Kin Lane</h1>
+<h3>API Evangelist</h3>
+<p>&nbsp;</p>
+<h3>APIs and Big Data in AWS</h3>
+<p>Chicago Amazon Web Services Group</p>
+<p>September 23rd, 2014</p>
+<ul style="font-size: 18px; padding-top: 20px;">
+<li class="fragment">Some Quick Background On Myself...</li>
+<li class="fragment">25 Years Database Engineer</li>
+<li class="fragment">15 Years Web Applications</li>
+<li class="fragment">8 Years Cloud Computing</li>
+<li class="fragment">4 Years Studying APIs</li>
+</ul></section>  
+                    			                    
+                    		<section><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png" width="375" /></section>  
+                    			                    
+                    		<section><h1>Target</h1>
+<ul style="font-size: 18px; padding-top: 20px;">
+<li>Individuals</li>
+<li>Startups</li>
+<li>SMB</li>
+<li>SME</li>
+<li>Enterprise</li>
+<li>Government</li>
+<li>Institutions</li>
+</ul></section>  
+                    			                    
+                    		<section><p>&nbsp;</p>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-big-data.png" alt="" width="250" /></p>
+<p style="font-size: 65px; font-weight: bold;">Big Data</p></section>  
+                    			                    
+                    		<section><p><br /><br /></p>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png" alt="" width="290" /></p>
+<p style="font-size: 65px; font-weight: bold;">APIs</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-database.png" alt="" width="200" /></p>
+<p style="font-size: 65px; font-weight: bold;">Data Sources</p></section>  
+                    			                    
+                    		<section><p><img style="margin-bottom: 60px;" src="https://s3.amazonaws.com/kinlane-productions/AWS_LOGO_CMYK.jpg" alt="" width="275" /><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-database.png" alt="" width="200" /></p>
+<p style="font-size: 50px; font-weight: bold;">RDS (SQL)</p></section>  
+                    			                    
+                    		<section><p><img style="margin-bottom: 60px;" src="https://s3.amazonaws.com/kinlane-productions/AWS_LOGO_CMYK.jpg" alt="" width="275" /><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-database.png" alt="" width="200" /></p>
+<p style="font-size: 50px; font-weight: bold;">DynamoDB (NoSQL)</p></section>  
+                    			                    
+                    		<section><p><img style="margin-bottom: 60px;" src="https://s3.amazonaws.com/kinlane-productions/AWS_LOGO_CMYK.jpg" alt="" width="275" /><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-documents.png" alt="" width="200" /></p>
+<p style="font-size: 50px; font-weight: bold;">S3 (Files)</p></section>  
+                    			                    
+                    		<section><p><img style="margin-bottom: 60px;" src="https://s3.amazonaws.com/kinlane-productions/AWS_LOGO_CMYK.jpg" alt="" width="275" /><img style="padding: 15px;" src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-servers.png" alt="" width="175" /></p>
+<p style="font-size: 50px; font-weight: bold;">EC2 (Compute)</p></section>  
+                    			                    
+                    		<section><p><img style="margin-bottom: 60px;" src="https://s3.amazonaws.com/kinlane-productions/AWS_LOGO_CMYK.jpg" alt="" width="275" /><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-documents.png" alt="" width="200" /></p>
+<p style="font-size: 50px; font-weight: bold;">S3 (Storage)</p></section>  
+                    			                    
+                    		<section><p><img style="margin-bottom: 60px;" src="https://s3.amazonaws.com/kinlane-productions/AWS_LOGO_CMYK.jpg" alt="" width="275" /><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-distribution.png" alt="" width="200" /></p>
+<p style="font-size: 50px; font-weight: bold;">CloudFront (Distribution)</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/apiblueprint/apiblueprint-logo-2.png" alt="" width="250" /><br /><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/swagger/Swagger-Logo.png" alt="" width="230" /><br /><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/raml/raml-logo.jpg" alt="" width="200" /></p>
+<p style="font-size: 50px; font-weight: bold;">API Design</p></section>  
+                    			                    
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-swagger-json.png" alt="" width="300" /></p>
+<p style="font-size: 50px; font-weight: bold;">API Design (JSON)</p></section>  
+                    			                    
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-swagger-yaml.png" alt="" width="300" /></p>
+<p style="font-size: 50px; font-weight: bold;">API Design (YAML)</p></section>  
+                    			                    
+                    		<section><table style="padding-left: 150px; padding-top: 0px; margin-bottom: 0px;" cellspacing="5" cellpadding="5">
+<tbody>
+<tr>
+<td width="200"><img style="padding-left: 50px;" src="https://s3.amazonaws.com/kinlane-productions/programming-languages/Adobe_ColdFusion_10_icon.png" alt="" width="50" /></td>
+<td width="200"><img style="padding-left: 50px;" src="https://s3.amazonaws.com/kinlane-productions/programming-languages/java.png" alt="" width="50" /></td>
+<td width="200"><img src="https://s3.amazonaws.com/kinlane-productions/programming-languages/javascript-logo.png" alt="" width="150" /></td>
+</tr>
+<tr>
+<td width="200"><img src="https://s3.amazonaws.com/kinlane-productions/programming-languages/microsoft-net.png" alt="" width="90" /></td>
+<td width="200"><img src="https://s3.amazonaws.com/kinlane-productions/programming-languages/nodejs.png" alt="" width="135" /></td>
+<td width="200"><img src="https://s3.amazonaws.com/kinlane-productions/programming-languages/php.png" alt="" width="130" /></td>
+</tr>
+<tr>
+<td width="200"><img src="https://s3.amazonaws.com/kinlane-productions/programming-languages/python-logo.png" alt="" width="150" /></td>
+<td width="200"><img style="padding-left: 50px;" src="https://s3.amazonaws.com/kinlane-productions/programming-languages/ruby-logo.png" alt="" width="70" /></td>
+</tr>
+</tbody>
+</table>
+<p style="font-size: 50px; font-weight: bold;">API Frameworks</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-gears.png" alt="" width="300" /></p>
+<p style="font-size: 50px; font-weight: bold;">REST</p></section>  
+                    			                    
+                    		<section><p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/apispark-logo" alt="" width="500" /></p>
+<p style="font-size: 50px; font-weight: bold;">API Spark (Deployment)</p></section>  
+                    			                    
+                    		<section><p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/strongloop-logo.png" alt="" width="500" /></p>
+<p style="font-size: 50px; font-weight: bold;">StrongLoop (Deployment)</p></section>  
+                    			                    
+                    		<section><p><img style="margin-bottom: 60px;" src="https://s3.amazonaws.com/kinlane-productions/AWS_LOGO_CMYK.jpg" alt="" width="275" /><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-conductor.png" alt="" width="150" /></p>
+<p style="font-size: 50px; font-weight: bold;">Cloud Formation (Orchestration)</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-shipping-container.png" alt="" width="325" /></p>
+<p style="font-size: 50px; font-weight: bold;">Containers (Deployment)</p></section>  
+                    			                    
+                    		<section><p><img style="margin-bottom: 60px;" src="https://s3.amazonaws.com/kinlane-productions/AWS_LOGO_CMYK.jpg" alt="" width="275" /><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-global-distribution.jpg" alt="" width="250" /></p>
+<p style="font-size: 50px; font-weight: bold;">Route 53 (DNS)</p></section>  
+                    			                    
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/services/api-management.png" alt="" width="325" /></p>
+<p style="font-size: 50px; font-weight: bold;">Services (Management)</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/api-service-providers/3Scale/3scale-logo.png" alt="" width="450" align="center" /></p>
+<p style="font-size: 50px; font-weight: bold;">API Infrastructure (Management)</p></section>  
+                    			                    
+                    		<section><p><br /><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-key.png" alt="" width="325" /></p>
+<p style="font-size: 50px; font-weight: bold;">Keys (Management)</p></section>  
+                    			                    
+                    		<section><p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-analytics-2.png" alt="" width="250" /></p>
+<p style="font-size: 50px; font-weight: bold;">Analytics (Management)</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-conductor.png" alt="" width="225" /></p>
+<p style="font-size: 50px; font-weight: bold;">Service Composition (Management)</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-dollar-signs.jpg" alt="" width="250" /></p>
+<p style="font-size: 50px; font-weight: bold;">Monetization (Management)</p></section>  
+                    			                    
+                    		<section><h2>Github</h2>
+                       <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-github.jpg" width="300" /></section>  
+                    			                    
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-portal-developers.jpg" alt="" width="300" /></p>
+<p style="font-size: 50px; font-weight: bold;">Developer Portals (Github)</p></section>  
+                    			                    
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-swagger-json.png" alt="" width="300" /></p>
+<p style="font-size: 50px; font-weight: bold;">API Definitions (Github)</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/swagger/Swagger-Screenshot-1.png" alt="" width="450" /></p>
+<p style="font-size: 50px; font-weight: bold;">Interactive API Documentation (Github)</p></section>  
+                    			                    
+                    		<section><p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-code.png" alt="" width="260" /></p>
+<p style="font-size: 50px; font-weight: bold;">Code Samples (Github)</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-sdk.png" alt="" width="260" /></p>
+<p style="font-size: 50px; font-weight: bold;">Software Development Kits (Github)</p></section>  
+                    			                    
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-discovery.png" alt="" width="300" /></p>
+<p style="font-size: 50px; font-weight: bold;">API Discovery</p></section>  
+                    			                    
+                    		<section><p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/screenshots/programmable-web-09-2014.png" alt="" width="500" /></p>
+<p style="font-size: 50px; font-weight: bold;">ProgrammableWeb (Discovery)</p></section>  
+                    			                    
+                    		<section><p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/screenshots/mashape-09-2014.png" alt="" width="500" /></p>
+<p style="font-size: 50px; font-weight: bold;">Mashape (Discovery)</p></section>  
+                    			                    
+                    		<section><p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/screenshots/apis-json-09-2014.png" alt="" width="500" /></p>
+<p style="font-size: 50px; font-weight: bold;">APIs.json (Discovery)</p></section>  
+                    			                    
+                    		<section><p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/screenshots/apis-io-09-2014.png" alt="" width="575" /></p>
+<p style="font-size: 50px; font-weight: bold;">APIs.io (Discovery)</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/services/api-integration.png" alt="" width="350" /></p>
+<p style="font-size: 50px; font-weight: bold;">Integration</p></section>  
+                    			                    
+                    		<section><p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-touch-points.jpg" alt="" width="300" /></p>
+<p style="font-size: 50px; font-weight: bold;">Testing (Integration)</p></section>  
+                    			                    
+                    		<section><p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-heart-monitor.png" alt="" width="300" /></p>
+<p style="font-size: 50px; font-weight: bold;">Monitoring (Integration)</p></section>  
+                    			                    
+                    		<section><p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-proxy.png" alt="" width="300" /></p>
+<p style="font-size: 50px; font-weight: bold;">Proxy (Integration)</p></section>  
+                    			                    
+                    		<section><p><img style="margin-bottom: 60px;" src="https://s3.amazonaws.com/kinlane-productions/AWS_LOGO_CMYK.jpg" alt="" width="275" /><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-heart-monitor.png" alt="" width="250" /></p>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">CloudWatch (Integration)</p></section>  
+                    			                    
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-shipping-containers.png" alt="" width="500" /></p>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">Modular Resources</p></section>  
+                    			                    
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-stacks.png" alt="" width="300" /></p>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">Virtual Stacks</p></section>  
+                    			                    
+                    		<section><p style="font-size: 50px; font-weight: bold;">Resources/</p>
+<p style="font-size: 50px; font-weight: bold;">to</p>
+<p style="font-size: 50px; font-weight: bold;">Experiences/</p></section>  
+                    			                    
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-research.png" alt="" width="350" /></p>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">Research &amp; Development</p></section>  
+                    			                    
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-business-icon.png" alt="" width="300" /></p>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">Business Development</p></section>  
+                    			                    
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-external.png" alt="" width="275" /></p>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">External</p></section>  
+                    			                    
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-internal.png" alt="" width="300" /></p>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">Internal</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-website.png" alt="" width="300" /></p>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">Websites</p></section>  
+                    			                    
+                    		<section><p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-iphone.png" alt="" width="200" /></p>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">Mobile</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-single-page-app.png" alt="" width="300" /></p>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">Single Page Apps</p></section>  
+                    			                    
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-spreadsheet-db.png" alt="" width="250" /></p>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">Spreadsheets</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-internet-of-things.png" alt="" width="350" /></p>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">Internet of Things</p></section>  
+                    			                    
+                    		<section><p><img style="margin-bottom: 60px;" src="https://s3.amazonaws.com/kinlane-productions/AWS_LOGO_CMYK.jpg" alt="" width="275" /><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-big-data.png" alt="" width="275" /></p>
+<p style="font-size: 65px; font-weight: bold;">AWS + Big Data</p></section>  
+                    			                    
+                    		<section><h1>The End</h1>
+						<br />
+						<h4>By Kin Lane (@kinlane)</h4>
+						<br />
+						<p align="center"><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist/api-evangelist-logo-400.png" width="300" /></p></section>  
+                    		          
+                    
+                </div>
+    
+                <!-- The navigational controls UI -->
+                <aside class="controls">
+                    <a class="left" href="#">&#x25C4;</a>
+                    <a class="right" href="#">&#x25BA;</a>
+                    <a class="up" href="#">&#x25B2;</a>
+                    <a class="down" href="#">&#x25BC;</a>
+                </aside>
+    
+                <!-- Presentation progress bar -->
+                <div class="progress"><span></span></div>
+                
+            </div>
+            
+            <script src="http://kinlane.github.com/talks/lib/js/head.min.js"></script>
+            <script src="http://kinlane.github.com/talks/javascripts/reveal.min.js"></script>
+    
+            <script>
+                
+                // Full list of configuration options available here:
+                // https://github.com/hakimel/reveal.js#configuration
+                Reveal.initialize({
+                    controls: true,
+                    progress: true,
+                    history: true,
+                    
+                    theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
+                    transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+    
+                    // Optional libraries used to extend on reveal.js
+                    dependencies: [
+                        { src: 'http://kinlane.github.com/talks/lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    ]
+                });
+                
+            </script>
+
+    </body>
+</html>
