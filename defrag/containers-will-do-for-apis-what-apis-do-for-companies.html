@@ -5,13 +5,15 @@
 <head> 
     <meta charset="utf-8">
     
-    <title>API LIfecycle At Nordic APIs</title>
+    <title>Containers Will Do For APIs What APIs Do For Companies</title>
 
-    <meta name="description" content="A walk through the API lifecycle - design, deployment, management, and integration.">
+    <meta name="description" content="A walk through the history of APIs, API design & planning, API development, API evangelism and whats next when it comes to APIs.">
     <meta name="author" content="Kin Lane">
     
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     
@@ -26,8 +28,6 @@
         document.write( '<link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
     </script>
 
-	<script src="http://kinlane.github.com/talks/javascripts/jquery.awesomeCloud-0.2.min.js"></script>
-
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
@@ -35,14 +35,14 @@
     <style type="text/css">
 		.wordcloud {
 			border: 0px solid #000;
-			height: 8in;
+			height: 3in;
 			margin: 0.1in auto;
 			padding: 0;
 			page-break-after: always;
 			page-break-inside: avoid;
 			width: 6in;
 		}        
-    </style>      
+    </style>         
     
 </head>
         
@@ -58,129 +58,290 @@
                     
                                         
 						                    
-                    		<section><h2>API Design</h2>
-                        <br />
-                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-design.png" width="300" /></section>  
+                    		<section><h2>Kin Lane</h2>
+<h4>@APIEvangelist</h4>
+<p>&nbsp;</p>
+<h3>Containers Will Do For APIs</h3>
+<h3>What APIs Do For Companies</h3>
+<p>&nbsp;</p>
+<p>Defrag - November 2014</p></section>  
                     			                    
-                    		<section><h2>API Definitions</h2>
-<p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-swagger-json.png" alt="" width="375" /></p></section>  
+                    		<section><p><img style="border: 2px solid #000;" src="https://s3.amazonaws.com/kinlane-productions/john-sheehan-containers-apis.png" alt="" width="650" /></p></section>  
                     			                    
-                    		<section><h2>API Definition Formats</h2>
-<p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/apiblueprint/apiblueprint-logo-2.png" alt="" width="250" /><br /><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/swagger/Swagger-Logo.png" alt="" width="230" /><br /><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/raml/raml-logo.jpg" alt="" width="200" /></p></section>  
+                    		<section><h2>Kin Lane</h2>
+<ul style="font-size: 18px; padding-top: 20px;">
+<li>25 Years Database Engineer</li>
+<li>15 Years Web Applications</li>
+<li>8 Years Cloud Computing</li>
+<li>4 Years Studying APIs</li>
+</ul></section>  
                     			                    
-                    		<section><h2>Collaboration</h2>
-<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-collaboration.png" alt="" width="300" /></p></section>  
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png" alt="" width="300" /></p>
+<h3>apievangelist.com</h3></section>  
                     			                    
-                    		<section><h2>Communicate</h2>
-<p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-conversations.jpg" alt="" width="300" /></p></section>  
+                    		<section><h2>Target</h2>
+<ul style="font-size: 18px; padding-top: 20px;">
+<li>Individuals</li>
+<li>Startups</li>
+<li>SMB</li>
+<li>Enterprise</li>
+<li>Government</li>
+</ul></section>  
                     			                    
-                    		<section><h2>Design Notebook</h2>
-<p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-notebook.png" alt="" width="225" /></p></section>  
+                    		<section><p><br /><br /></p>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-shipping-container.png" alt="" width="290" /></p>
+<p style="font-size: 65px; font-weight: bold;">(Containers)</p></section>  
                     			                    
-                    		<section><h2>Design Guide</h2>
-<p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-design-guide.png" alt="" width="225" /></p></section>  
+                    		<section><p><br /><br /></p>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png" alt="" width="290" /></p>
+<p style="font-size: 65px; font-weight: bold;">(APIs)</p></section>  
                     			                    
-                    		<section><h2>Dictionary</h2>
-<p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-dictionary.png" alt="" width="300" /></p></section>  
+                    		<section><p><br /><br /></p>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-business-icon.png" alt="" width="290" /></p>
+<p style="font-size: 65px; font-weight: bold;">(Business)</p></section>  
                     			                    
-                    		<section><h1>API Deployment</h1>
-<p><br /><br /><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-deployment-2.jpg" alt="" width="325" /></p></section>  
+                    		<section><p><br /><br /></p>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png" alt="" width="290" /></p>
+<p style="font-size: 65px; font-weight: bold;">14 Years</p></section>  
                     			                    
-                    		<section><h2>API Definitions</h2>
-<p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-swagger-json.png" alt="" width="375" /></p></section>  
+                    		<section><h2>Roy Fieldings Dissertation</h2>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/roy-fielding/roy-fielding-dissertation-home-page.png" alt="" width="550" /></p></section>  
                     			                    
-                    		<section><h2>API Gateway</h2>
-<p><br /> <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-proxy.png" alt="" width="300" /></p></section>  
+                    		<section><p><br /> <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/salesforce-logo.png" alt="" width="325" /></p>
+<p style="font-size: 50px; font-weight: bold;">(Contacts / Relationships / Sales)</p></section>  
                     			                    
-                    		<section><h2>API Frameworks</h2>
-<p><br /> <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-ladder.png" alt="" width="150" /></p></section>  
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/amazon/amazon-com-logo.jpg" alt="" width="375" /></p>
+<p style="font-size: 50px; font-weight: bold;">(Products)</p></section>  
                     			                    
-                    		<section><h2>Cloud Computing</h2>
-<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-services.png" alt="" width="300" /></p></section>  
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/delicious/delicious-logo.jpg" alt="" width="375" /></p>
+<p style="font-size: 50px; font-weight: bold;">(Links)</p></section>  
                     			                    
-                    		<section><h2>Access</h2>
-<p><br /><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-key.png" alt="" width="325" /></p></section>  
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/flickr/flickr-logo.jpeg" alt="" width="300" /></p>
+<p style="font-size: 50px; font-weight: bold;">(Images)</p></section>  
                     			                    
-                    		<section><h2>Authentication</h2>
-<p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/oauth-logo.png" alt="" width="250" /></p></section>  
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/twitter/tweet-bird-blue-white.png" alt="" width="250" /></p>
+<p style="font-size: 50px; font-weight: bold;">(Social)</p></section>  
                     			                    
-                    		<section><h2>Logging</h2>
-<p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-documents.png" alt="" width="250" /></p></section>  
+                    		<section><p><img style="margin-bottom: 60px;" src="https://s3.amazonaws.com/kinlane-productions/AWS_LOGO_CMYK.jpg" alt="" width="275" /><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-documents.png" alt="" width="200" /></p>
+<p style="font-size: 50px; font-weight: bold;">S3 (Files)</p></section>  
                     			                    
-                    		<section><h2>Discovery</h2>
-<p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-discovery.png" alt="" width="250" /></p></section>  
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/google/google-maps-logo.jpg" alt="" width="350" /></p>
+<p style="font-size: 50px; font-weight: bold;">(Mapping)</p></section>  
                     			                    
-                    		<section><h2>API Management</h2>
-<p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/services/api-management.png" alt="" width="250" /></p></section>  
+                    		<section><p><img style="margin-bottom: 60px;" src="https://s3.amazonaws.com/kinlane-productions/AWS_LOGO_CMYK.jpg" alt="" width="275" /><img style="padding: 15px;" src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-servers.png" alt="" width="175" /></p>
+<p style="font-size: 50px; font-weight: bold;">EC2 (Compute)</p></section>  
                     			                    
-                    		<section><h2>API Definitions</h2>
-<p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-swagger-json.png" alt="" width="375" /></p></section>  
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/youtube/youtube-logo.png" alt="" width="300" /></p>
+<p style="font-size: 50px; font-weight: bold;">(Videos)</p></section>  
                     			                    
-                    		<section><h2>Service Composition</h2>
-<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-conductor.png" alt="" width="200" /></p></section>  
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/twilio/twilio-logo-2100x650.png" alt="" width="350" /></p>
+<p style="font-size: 50px; font-weight: bold;">(SMS / MMS / Voice)</p></section>  
                     			                    
-                    		<section><h2>Documentation</h2>
-<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-documentation-interactive.png" alt="" width="275" /></p></section>  
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/sendgrid/sendgrid-logo.jpeg" alt="" width="350" /></p>
+<p style="font-size: 50px; font-weight: bold;">(Email)</p></section>  
                     			                    
-                    		<section><h2>Self-Service</h2>
-<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-hand-wrench.jpg" alt="" width="350" /></p></section>  
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/spotify/spotify-logo.png" alt="" width="400" /></p>
+<p style="font-size: 50px; font-weight: bold;">(Music)</p></section>  
                     			                    
-                    		<section><h2>App Management</h2>
-<p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-app-icon.jpg" alt="" width="200" /></p></section>  
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/stripe/Stripe-logo.jpeg" alt="" width="350" /></p>
+<p style="font-size: 50px; font-weight: bold;">(Payments)</p></section>  
                     			                    
-                    		<section><h2>Pricing</h2>
-<p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-dollar-sign.jpg" alt="" width="200" /></p></section>  
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-tag-cloud-essential-resources.png" alt="" width="650" /></p>
+<p style="font-size: 50px; font-weight: bold;">Essential Resources</p></section>  
                     			                    
-                    		<section><h2>Analytics</h2>
-<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-analytics-2.png" alt="" width="250" /></p></section>  
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-television.png" alt="" width="350" /></p>
+<p style="font-size: 65px; font-weight: bold;">Channels</p></section>  
                     			                    
-                    		<section><h2>Terms of Service</h2>
-                        <br />
-                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-terms-conditions.png" width="215" /></section>  
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-website.png" alt="" width="300" /></p>
+<p style="font-size: 65px; font-weight: bold;">Websites</p></section>  
                     			                    
-                    		<section><h2>Communication</h2>
-                        <br />
-                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-blog-icon.png" width="200" /></section>  
+                    		<section><p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-iphone.png" alt="" width="175" /></p>
+<p style="font-size: 65px; font-weight: bold;">Mobile</p></section>  
                     			                    
-                    		<section><h2>Support</h2>
-                        <br />
-                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-ticket-system.png" width="210" /></section>  
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-tablet.png" alt="" width="350" /></p>
+<p style="font-size: 65px; font-weight: bold;">Mobile</p></section>  
                     			                    
-                    		<section><h2>API Integration</h2>
-<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/services/api-integration.png" alt="" width="300" /></p></section>  
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-single-page-app.png" alt="" width="325" /></p>
+<p style="font-size: 65px; font-weight: bold;">Single Page Apps</p></section>  
                     			                    
-                    		<section><h2>API Definitions</h2>
-<p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-swagger-json.png" alt="" width="375" /></p></section>  
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-internet-of-things.png" alt="" width="350" /></p>
+<p style="font-size: 65px; font-weight: bold;">Internet of Things</p></section>  
                     			                    
-                    		<section><h2>Code Libraries</h2>
-<p><br /><br /><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-code.png" alt="" width="260" /></p></section>  
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-business-models.png" alt="" width="350" /></p>
+<p style="font-size: 50px; font-weight: bold;">Business Models</p></section>  
                     			                    
-                    		<section><h2>Software Development Kits (SDK)</h2>
-<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-sdk.png" alt="" width="240" /></p></section>  
+                    		<section><div id="business-models-aas" class="wordcloud"></div>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">Business Models</p></section>  
                     			                    
-                    		<section><h2>Platform Development Kits (PDK)</h2>
-<p><br /><br /><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heroku.png" alt="" width="325" /></p></section>  
+                    		<section><div id="business-models-free" class="wordcloud"></div>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">Business Models</p></section>  
                     			                    
-                    		<section><h2>Mobile</h2>
-                        <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-iphone.png" width="175" /></section>  
+                    		<section><div id="business-models-developer-pays" class="wordcloud"></div>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">Business Models</p></section>  
                     			                    
-                    		<section><h2>Embeddable</h2>
-<p><br /><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-widget.png" alt="" width="250" /></p></section>  
+                    		<section><div id="business-models-developer-paid" class="wordcloud"></div>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">Business Models</p></section>  
                     			                    
-                    		<section><h2>Reciprocity</h2>
-<p><br /><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/trends/reciprocity-trends.png" alt="" width="350" /></p></section>  
+                    		<section><div id="business-models-indirect" class="wordcloud"></div>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">Business Models</p></section>  
                     			                    
-                    		<section><h2>Spreadsheets</h2>
-<p><br /><img style="padding-bottom: 100px; padding-right: 20px;" src="https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png" alt="" width="200" /><img src="https://s3.amazonaws.com/kinlane-productions/talks/101/google-spreadsheet.jpg" alt="" width="400" /></p></section>  
+                    		<section><div id="business-models-research-development" class="wordcloud"></div>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">Business Models</p></section>  
                     			                    
-                    		<section><h2>Testing</h2>
-<p><br /> <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-touch-points.jpg" alt="" width="250" /></p></section>  
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-tag-cloud-essential-resources.png" alt="" width="650" /></p>
+<p style="font-size: 50px; font-weight: bold;">Essential Resources</p></section>  
                     			                    
-                    		<section><h2>Monitoring</h2>
-<p><br /> <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-heart-monitor.png" alt="" width="250" /></p></section>  
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-puzzle-piece-gear.png" alt="" width="300" /></p>
+<p style="font-size: 50px; font-weight: bold;">Modular (Business)</p></section>  
                     			                    
-                    		<section><h2>Repeat</h2>
-<p><br /><br /><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-recycling.jpg" alt="" width="250" /></p></section>  
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-puzzle-3.png" alt="" width="300" /></p>
+<p style="font-size: 50px; font-weight: bold;">Reusable (Business)</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-running.png" alt="" width="300" /></p>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">Agile (Business)</p></section>  
+                    			                    
+                    		<section><p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-hand-wrench.jpg" alt="" width="350" /></p>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">Self-Service (Business)</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/24-7-365.jpg" alt="" width="210" /></p>
+<p style="font-size: 50px; font-weight: bold;">Availability (Business)</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-payment-scheduled.png" alt="" width="210" /></p>
+<p style="font-size: 50px; font-weight: bold;">Pay As You Go (Business)</p></section>  
+                    			                    
+                    		<section><p><br /><br /><br /><br /></p>
+<h2>api.{domain}.com/resources/</h2></section>  
+                    			                    
+                    		<section><p><br /><br /><br /><br /></p>
+<h2>api.{domain}.com/products/</h2></section>  
+                    			                    
+                    		<section><p><br /><br /><br /><br /></p>
+<h2>api.{domain}.com/links/</h2></section>  
+                    			                    
+                    		<section><p><br /><br /><br /><br /></p>
+<h2>api.{domain}.com/images/</h2></section>  
+                    			                    
+                    		<section><p><br /><br /><br /><br /></p>
+<h2>api.{domain}.com/videos/</h2></section>  
+                    			                    
+                    		<section><p><br /><br /><br /><br /></p>
+<h2>api.{domain}.com/messages/</h2></section>  
+                    			                    
+                    		<section><p><br /><br /><br /><br /></p>
+<h2>api.{domain}.com/payments/</h2></section>  
+                    			                    
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-api-powered-business.png" alt="" width="550" /></p>
+<p>&nbsp;</p>
+<p style="font-size: 65px; font-weight: bold;">API Powered Business</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/docker/docker-logo.png" alt="" width=" alt=" /></p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-wordpress.png" alt="" width="300" /></p>
+<p style="font-size: 65px; font-weight: bold;">Apps</p></section>  
+                    			                    
+                    		<section><p><br /><br /></p>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png" alt="" width="290" /></p>
+<p style="font-size: 65px; font-weight: bold;">APIs</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-dimensions.png" alt="" width="290" /></p>
+<p style="font-size: 65px; font-weight: bold;">Dimensions</p>
+<p style="font-size: 45px; font-weight: bold;">(For Deployment)</p></section>  
+                    			                    
+                    		<section><div id="dimensions-providers" class="wordcloud"></div>
+<p style="font-size: 65px; font-weight: bold;">Dimensions</p>
+<p style="font-size: 45px; font-weight: bold;">(Providers)</p></section>  
+                    			                    
+                    		<section><div id="dimensions-geographic" class="wordcloud"></div>
+<p style="font-size: 65px; font-weight: bold;">Dimensions</p>
+<p style="font-size: 45px; font-weight: bold;">(Geographic)</p></section>  
+                    			                    
+                    		<section><div id="dimensions-personalized" class="wordcloud"></div>
+<p style="font-size: 65px; font-weight: bold;">Dimensions</p>
+<p style="font-size: 45px; font-weight: bold;">(Personalization)</p></section>  
+                    			                    
+                    		<section><div id="dimensions-collections" class="wordcloud"></div>
+<p style="font-size: 65px; font-weight: bold;">Dimensions</p>
+<p style="font-size: 45px; font-weight: bold;">(For Collections)</p></section>  
+                    			                    
+                    		<section><div id="dimensions-lifecycle" class="wordcloud"></div>
+<p style="font-size: 50px; font-weight: bold;">Dimensions</p>
+<p style="font-size: 45px; font-weight: bold;">(For Lifecycle)</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-dimensions-pricing.png" alt="" width="290" /></p>
+<p style="font-size: 65px; font-weight: bold;">Dimensions</p>
+<p style="font-size: 45px; font-weight: bold;">(Business Models)</p></section>  
+                    			                    
+                    		<section><div id="dimensions-business-models" class="wordcloud"></div>
+<p style="font-size: 65px; font-weight: bold;">Dimensions</p>
+<p style="font-size: 45px; font-weight: bold;">(Pricing)</p></section>  
+                    			                    
+                    		<section><p><br /><br /><br /><br /></p>
+<h2>Wholesale / Private Label</h2></section>  
+                    			                    
+                    		<section><p><br /><br /><br /><br /></p>
+<h2>B2B / B2C / B2D</h2></section>  
+                    			                    
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-puzzle-piece-gear.png" alt="" width="300" /></p>
+<p style="font-size: 50px; font-weight: bold;">Modular (API)</p></section>  
+                    			                    
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-puzzle-3.png" alt="" width="300" /></p>
+<p style="font-size: 50px; font-weight: bold;">Reusable (API)</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-running.png" alt="" width="300" /></p>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">Agile (API)</p></section>  
+                    			                    
+                    		<section><p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-hand-wrench.jpg" alt="" width="350" /></p>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">Self-Service (API)</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/24-7-365.jpg" alt="" width="210" /></p>
+<p style="font-size: 50px; font-weight: bold;">Availability (API)</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-payment-scheduled.png" alt="" width="210" /></p>
+<p style="font-size: 50px; font-weight: bold;">Pay As You Go (API)</p></section>  
+                    			                    
+                    		<section><p><br /><br /><br /><br /></p>
+<p style="font-size: 28px; font-weight: bold;">{user}.{geographic}.{network}.{infrastructure}.api.{domain}.com/resources/</p></section>  
+                    			                    
+                    		<section><p><br /><br /><br /><br /></p>
+<p style="font-size: 28px; font-weight: bold;">{user}.{geographic}.{network}.{infrastructure}.api.{domain}.com/products/</p></section>  
+                    			                    
+                    		<section><p><br /><br /><br /><br /></p>
+<p style="font-size: 28px; font-weight: bold;">{user}.{geographic}.{network}.{infrastructure}.api.{domain}.com/links/</p></section>  
+                    			                    
+                    		<section><p><br /><br /><br /><br /></p>
+<p style="font-size: 28px; font-weight: bold;">{user}.{geographic}.{network}.{infrastructure}.api.{domain}.com/images/</p></section>  
+                    			                    
+                    		<section><p><br /><br /><br /><br /></p>
+<p style="font-size: 28px; font-weight: bold;">{user}.{geographic}.{network}.{infrastructure}.api.{domain}.com/videos/</p></section>  
+                    			                    
+                    		<section><p><br /><br /><br /><br /></p>
+<p style="font-size: 28px; font-weight: bold;">{user}.{geographic}.{network}.{infrastructure}.api.{domain}.com/messages/</p></section>  
+                    			                    
+                    		<section><p><br /><br /><br /><br /></p>
+<p style="font-size: 28px; font-weight: bold;">{user}.{geographic}.{network}.{infrastructure}.api.{domain}.com/payments/</p></section>  
+                    			                    
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-container-powered-api.png" alt="" width="550" /></p>
+<p>&nbsp;</p>
+<p style="font-size: 65px; font-weight: bold;">Container Powered APIs</p></section>  
+                    			                    
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-question-mark.png" alt="" width="250" /></p>
+<p style="font-size: 65px; font-weight: bold;">Are Your APIs Ready?</p></section>  
+                    			                    
+                    		<section><h1>The End</h1>
+						<br />
+						<h4>By Kin Lane (@kinlane)</h4>
+						<br />
+						<p align="center"><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist/api-evangelist-logo-400.png" width="300" /></p></section>  
                     		          
                     
                 </div>
@@ -200,7 +361,373 @@
             
             <script src="http://kinlane.github.com/talks/lib/js/head.min.js"></script>
             <script src="http://kinlane.github.com/talks/javascripts/reveal.min.js"></script>
+    		<script src="http://kinlane.github.com/talks/javascripts/jquery.awesomeCloud-0.2.min.js"></script>
     
+			<script type="text/javascript">
+						
+				$(document).ready(function(){		
+					   
+					   
+				    // business mdels - as a service	         
+					slide1 = '<span data-weight="12">Software</span>';
+					slide1 = slide1 + '<span data-weight="12">Platform</span>';
+					slide1 = slide1 + '<span data-weight="12">Infrastructure</span>';
+					slide1 = slide1 + '<span data-weight="30">Service</span>';
+				
+					slide1 = slide1 + '<span data-weight="20">SaaS</span>';
+					slide1 = slide1 + '<span data-weight="20">PaaS</span>';
+					slide1 = slide1 + '<span data-weight="20">IaaS</span>';
+					
+					slide1 = slide1 + '<span data-weight="20">Cloud</span>';					
+				
+					$('#business-models-aas').append(slide1);             		                            
+						            
+					$("#business-models-aas").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});		
+						
+					// business mdels - free	
+					slide1 = '<span data-weight="12">30 Days</span>';
+					slide1 = slide1 + '<span data-weight="15">Trial</span>';
+					slide1 = slide1 + '<span data-weight="50">FREE</span>';				
+					slide1 = slide1 + '<span data-weight="20">Freemium</span>';			
+					slide1 = slide1 + '<span data-weight="12">45 Days</span>';
+					slide1 = slide1 + '<span data-weight="12">7 Days</span>';
+					slide1 = slide1 + '<span data-weight="12">60 Days</span>';
+					slide1 = slide1 + '<span data-weight="12">Quantity</span>';
+					slide1 = slide1 + '<span data-weight="12">Intro</span>';
+					slide1 = slide1 + '<span data-weight="12">You Are The Product</span>';
+					slide1 = slide1 + '<span data-weight="12">Free Forever</span>';
+				
+					$('#business-models-free').append(slide1);             		                            
+						            
+					$("#business-models-free").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});		
+							
+						
+					// business mdels - developer pays
+					slide1 = '<span data-weight="12">As You Go</span>';
+					slide1 = slide1 + '<span data-weight="15">What You Use</span>';
+					slide1 = slide1 + '<span data-weight="50">Dev Pays</span>';				
+					slide1 = slide1 + '<span data-weight="20">Unit</span>';			
+					slide1 = slide1 + '<span data-weight="12">Storage</span>';
+					slide1 = slide1 + '<span data-weight="12">Bandwidth</span>';
+					slide1 = slide1 + '<span data-weight="12">Utility</span>';
+					slide1 = slide1 + '<span data-weight="12">Cloud</span>';
+					slide1 = slide1 + '<span data-weight="12">Tiered</span>';
+					slide1 = slide1 + '<span data-weight="12">Enterprise</span>';
+				
+					$('#business-models-developer-pays').append(slide1);             		                            
+						            
+					$("#business-models-developer-pays").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});							
+							
+					// business mdels - developer gets paid	
+					slide1 = '<span data-weight="12">Credits</span>';
+					slide1 = slide1 + '<span data-weight="15">Affiliates</span>';
+					slide1 = slide1 + '<span data-weight="50">Dev Gets Paid</span>';				
+					slide1 = slide1 + '<span data-weight="20">Advertising</span>';			
+					slide1 = slide1 + '<span data-weight="12">Revenue Share</span>';
+					slide1 = slide1 + '<span data-weight="12">Incentives</span>';
+					slide1 = slide1 + '<span data-weight="12">Profits</span>';
+					slide1 = slide1 + '<span data-weight="12">$</span>';
+					slide1 = slide1 + '<span data-weight="12">$</span>';
+					slide1 = slide1 + '<span data-weight="12">$</span>';
+					slide1 = slide1 + '<span data-weight="12">$</span>';
+					slide1 = slide1 + '<span data-weight="12">$</span>';
+				
+					$('#business-models-developer-paid').append(slide1);             		                            
+						            
+					$("#business-models-developer-paid").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});	
+						
+					// business mdels - Indirect
+					slide1 = '<span data-weight="12">Credits</span>';
+					slide1 = slide1 + '<span data-weight="15">Marketing Vehicle</span>';
+					slide1 = slide1 + '<span data-weight="50">Indirect</span>';				
+					slide1 = slide1 + '<span data-weight="20">Brand</span>';			
+					slide1 = slide1 + '<span data-weight="12">Generate Users</span>';
+					slide1 = slide1 + '<span data-weight="12">Generate Content</span>';
+					slide1 = slide1 + '<span data-weight="12">Traffic Generation</span>';
+					slide1 = slide1 + '<span data-weight="12">Page Views</span>';
+					slide1 = slide1 + '<span data-weight="12">Build Links</span>';
+					slide1 = slide1 + '<span data-weight="12">Generate Data</span>';
+					slide1 = slide1 + '<span data-weight="12">Honey Pot</span>';
+				
+					$('#business-models-indirect').append(slide1);             		                            
+						            
+					$("#business-models-indirect").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});																			
+						
+					// business mdels - Research & Developent
+					slide1 = '<span data-weight="12">Development</span>';
+					slide1 = slide1 + '<span data-weight="15">Research</span>';
+					slide1 = slide1 + '<span data-weight="50">Experiment</span>';				
+					slide1 = slide1 + '<span data-weight="20">3rd Parties</span>';			
+					slide1 = slide1 + '<span data-weight="12">Partners</span>';
+					slide1 = slide1 + '<span data-weight="12">Public</span>';
+					slide1 = slide1 + '<span data-weight="12">Internal</span>';
+					slide1 = slide1 + '<span data-weight="12">Incubation</span>';
+					slide1 = slide1 + '<span data-weight="12">Investment</span>';
+					slide1 = slide1 + '<span data-weight="12">Ecosystem</span>';
+					slide1 = slide1 + '<span data-weight="12">Ideas</span>';
+					slide1 = slide1 + '<span data-weight="12">Outside The Box</span>';
+
+					$('#business-models-research-development').append(slide1);             		                            
+						            
+					$("#business-models-research-development").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});	
+						
+					// dimensions - providers
+					slide1 = '<span data-weight="10">Microsoft</span>';
+					slide1 = slide1 + '<span data-weight="40">Google</span>';
+					slide1 = slide1 + '<span data-weight="40">Amazon</span>';
+					slide1 = slide1 + '<span data-weight="10">RedHat</span>';
+					slide1 = slide1 + '<span data-weight="10">Digital Ocean</span>';	
+					slide1 = slide1 + '<span data-weight="10">Shipyard</span>';	
+					slide1 = slide1 + '<span data-weight="10">StackEngine</span>';	
+					slide1 = slide1 + '<span data-weight="10">Rackspace</span>';	
+					slide1 = slide1 + '<span data-weight="10">Joyent</span>';	
+					slide1 = slide1 + '<span data-weight="10">CoreOS</span>';
+					slide1 = slide1 + '<span data-weight="10">OpenStack</span>';	
+					slide1 = slide1 + '<span data-weight="10">IBM</span>';	
+					slide1 = slide1 + '<span data-weight="10">Deis</span>';				
+
+					$('#dimensions-providers').append(slide1);             		                            
+						            
+					$("#dimensions-providers").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});	
+						
+					// dimensions - geographic
+					slide1 = '<span data-weight="10">Canada</span>';
+					slide1 = slide1 + '<span data-weight="25">US East</span>';
+					slide1 = slide1 + '<span data-weight="25">US West</span>';
+					slide1 = slide1 + '<span data-weight="20">On-Premise</span>';
+					slide1 = slide1 + '<span data-weight="20">Closet</span>';
+					slide1 = slide1 + '<span data-weight="10">Asia</span>';
+					slide1 = slide1 + '<span data-weight="10">Tokyo</span>';	
+					slide1 = slide1 + '<span data-weight="10">Singapore</span>';	
+					slide1 = slide1 + '<span data-weight="10">Sydney</span>';	
+					slide1 = slide1 + '<span data-weight="10">Frankfurt</span>';	
+					slide1 = slide1 + '<span data-weight="10">Ireland</span>';	
+					slide1 = slide1 + '<span data-weight="10">South America</span>';
+					slide1 = slide1 + '<span data-weight="10">Africa</span>';	
+					slide1 = slide1 + '<span data-weight="10">Europe</span>';	
+					slide1 = slide1 + '<span data-weight="10">Spain</span>';
+					slide1 = slide1 + '<span data-weight="10">France</span>';	
+					slide1 = slide1 + '<span data-weight="10">Brazil</span>';	
+					slide1 = slide1 + '<span data-weight="10">New Zealand</span>';	
+					slide1 = slide1 + '<span data-weight="10">Australia</span>';
+					
+					$('#dimensions-geographic').append(slide1);             		                            
+						            
+					$("#dimensions-geographic").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});																			            
+			
+					// dimensions - personalized
+					slide1 = '<span data-weight="15">Limits</span>';
+					slide1 = slide1 + '<span data-weight="20">Scale</span>';
+					slide1 = slide1 + '<span data-weight="20">Performance</span>';
+					slide1 = slide1 + '<span data-weight="20">Load</span>';
+					slide1 = slide1 + '<span data-weight="10">Security</span>';	
+					slide1 = slide1 + '<span data-weight="10">Anonymous</span>';	
+					slide1 = slide1 + '<span data-weight="10">Speed</span>';	
+					slide1 = slide1 + '<span data-weight="10">Throughput</span>';	
+					slide1 = slide1 + '<span data-weight="10">Balanced</span>';	
+					slide1 = slide1 + '<span data-weight="15">Distributed</span>';
+					slide1 = slide1 + '<span data-weight="15">Offline</span>';				
+
+					$('#dimensions-personalized').append(slide1);             		                            
+						            
+					$("#dimensions-personalized").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});		
+						
+					// dimensions - collections
+					slide1 = '<span data-weight="10">APIs.json</span>';
+					slide1 = slide1 + '<span data-weight="20">BaaS</span>';
+					slide1 = slide1 + '<span data-weight="20">Collections</span>';
+					slide1 = slide1 + '<span data-weight="20">Stacks</span>';
+					slide1 = slide1 + '<span data-weight="10">Virtual</span>';	
+					slide1 = slide1 + '<span data-weight="10">Swagger</span>';	
+					slide1 = slide1 + '<span data-weight="10">RAML</span>';	
+					slide1 = slide1 + '<span data-weight="10">API Blueprint</span>';	
+					slide1 = slide1 + '<span data-weight="10">Composition</span>';	
+					slide1 = slide1 + '<span data-weight="10">Backends</span>';
+					slide1 = slide1 + '<span data-weight="10">Ochestration</span>';
+					slide1 = slide1 + '<span data-weight="10">IDE</span>';
+					slide1 = slide1 + '<span data-weight="10">Discovery</span>';											
+
+					$('#dimensions-collections').append(slide1);             		                            
+						            
+					$("#dimensions-collections").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});	
+						
+					// dimensions - lifecycle
+					slide1 = '<span data-weight="15">Integration</span>';
+					slide1 = slide1 + '<span data-weight="15">Design</span>';
+					slide1 = slide1 + '<span data-weight="15">Management</span>';
+					slide1 = slide1 + '<span data-weight="15">Deployment</span>';
+					slide1 = slide1 + '<span data-weight="15">Discovery</span>';	
+					slide1 = slide1 + '<span data-weight="10">Testing</span>';	
+					slide1 = slide1 + '<span data-weight="10">Monitoring</span>';	
+					slide1 = slide1 + '<span data-weight="10">QA</span>';	
+					slide1 = slide1 + '<span data-weight="10">Development</span>';	
+					slide1 = slide1 + '<span data-weight="10">Deprecation</span>';
+					slide1 = slide1 + '<span data-weight="10">Mock</span>';
+					slide1 = slide1 + '<span data-weight="10">Production</span>';	
+					slide1 = slide1 + '<span data-weight="10">Sandbox</span>';					
+
+					$('#dimensions-lifecycle').append(slide1);             		                            
+						            
+					$("#dimensions-lifecycle").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});	
+						
+					// dimensions - lifecycle
+					slide1 = '<span data-weight="30">Pay For What You Use</span>';
+					slide1 = slide1 + '<span data-weight="10">Units</span>';
+					slide1 = slide1 + '<span data-weight="10">Bandwidth</span>';
+					slide1 = slide1 + '<span data-weight="10">Performance</span>';
+					slide1 = slide1 + '<span data-weight="10">Redundancy</span>';	
+					slide1 = slide1 + '<span data-weight="10">Isolation</span>';	
+					slide1 = slide1 + '<span data-weight="10">Resiliency</span>';	
+					slide1 = slide1 + '<span data-weight="10">Distribution</span>';	
+					slide1 = slide1 + '<span data-weight="10">No Change</span>';	
+					slide1 = slide1 + '<span data-weight="10">Portability</span>';
+					slide1 = slide1 + '<span data-weight="10">Scalability</span>';
+					slide1 = slide1 + '<span data-weight="10">Transiency</span>';	
+					slide1 = slide1 + '<span data-weight="10">Security</span>';
+					slide1 = slide1 + '<span data-weight="10">Privacy</span>';								
+
+					$('#dimensions-business-models').append(slide1);             		                            
+						           		           
+						            
+					$("#dimensions-business-models").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});																					
+			
+				});
+				
+			</script>     
+		
+		    
             <script>
                 
                 // Full list of configuration options available here:
