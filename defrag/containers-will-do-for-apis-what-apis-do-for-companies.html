@@ -151,9 +151,8 @@
                     			                    
                     		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/stripe/Stripe-logo.jpeg" alt="" width="350" /></p>
 <p style="font-size: 50px; font-weight: bold;">(Payments)</p></section>  
-                    			                    
-                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-tag-cloud-essential-resources.png" alt="" width="650" /></p>
-<p style="font-size: 50px; font-weight: bold;">Essential Resources</p></section>  
+                    			                      
+                    		<section><div id="essential-resources" class="wordcloud"><p style="font-size: 50px; font-weight: bold;">Essential Resources</p></section> 	                    
                     			                    
                     		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-television.png" alt="" width="350" /></p>
 <p style="font-size: 65px; font-weight: bold;">Channels</p></section>  
@@ -724,7 +723,46 @@
 						},
 						"font" : "'Times New Roman', Times, serif",
 						"shape" : "circle"
-						});																					
+						});	
+						
+					// dimensions - lifecycle
+					slide1 = '<span data-weight="10">Links</span>';
+					slide1 = slide1 + '<span data-weight="10">Email</span>';
+					slide1 = slide1 + '<span data-weight="10">Voice</span>';
+					slide1 = slide1 + '<span data-weight="10">Images</span>';
+					slide1 = slide1 + '<span data-weight="10">Friends</span>';	
+					slide1 = slide1 + '<span data-weight="10">Videos</span>';	
+					slide1 = slide1 + '<span data-weight="10">Sales</span>';	
+					slide1 = slide1 + '<span data-weight="10">Products</span>';	
+					slide1 = slide1 + '<span data-weight="10">Compute</span>';	
+					slide1 = slide1 + '<span data-weight="10">Actions</span>';
+					slide1 = slide1 + '<span data-weight="10">Messages</span>';
+					slide1 = slide1 + '<span data-weight="10">Followers</span>';	
+					slide1 = slide1 + '<span data-weight="10">Checkin</span>';
+					slide1 = slide1 + '<span data-weight="10">Payments</span>';		
+					slide1 = slide1 + '<span data-weight="10">Maps</span>';		
+					slide1 = slide1 + '<span data-weight="10">Storage</span>';		
+					slide1 = slide1 + '<span data-weight="10">Location</span>';		
+					slide1 = slide1 + '<span data-weight="10">Sharing</span>';		
+					slide1 = slide1 + '<span data-weight="10">Audio</span>';
+					slide1 = slide1 + '<span data-weight="10">SMS</span>';	
+					slide1 = slide1 + '<span data-weight="10">MMS</span>';	
+
+					$('#essential-resources').append(slide1);             		                            
+						           		           
+						            
+					$("#essential-resources").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});																											
 			
 				});
 				
