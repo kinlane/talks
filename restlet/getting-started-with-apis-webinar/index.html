@@ -1,0 +1,175 @@
+
+<!doctype html>  
+<html lang="en">
+
+<head> 
+    <meta charset="utf-8">
+    
+    <title>Restlet Getting Started With APIs</title>
+
+    <meta name="description" content="A walk through the history of APIs, API design & planning, API development, API evangelism and whats next when it comes to APIs.">
+    <meta name="author" content="Kin Lane">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/main.css">
+    <link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="http://kinlane.github.com/lib/css/zenburn.css">
+
+    <script>
+        // If the query includes 'print-pdf' we'll use the PDF print sheet
+        document.write( '<link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <style type="text/css">
+		.wordcloud {
+			border: 0px solid #000;
+			height: 3in;
+			margin: 0.1in auto;
+			padding: 0;
+			page-break-after: always;
+			page-break-inside: avoid;
+			width: 6in;
+		}        
+    </style>         
+    
+</head>
+        
+        <body>
+            
+            <div class="reveal">
+    
+                <!-- Used to fade in a background when a specific slide state is reached -->
+                <div class="state-background"></div>
+                
+                <!-- Any section element inside of this container is displayed as a slide -->
+                <div class="slides">
+                    
+                                        
+						                    
+                    		<section><p><br /><br /></p>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/restlet/Restlet-whiteBg.png" alt="" width="290" /></p>
+<p style="font-size: 65px; font-weight: bold;">Getting Started With APIs</p>
+<p style="font-size: 65px; font-weight: bold;">#RESTLET</p></section>  
+                    			                    
+                    		<section><p><br /><br /></p>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png" alt="" width="290" /></p>
+<p style="font-size: 65px; font-weight: bold;">APIs</p></section>  
+                    			                    
+                    		<section><p><br /><br /></p>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-database-new.png" alt="" width="290" /></p>
+<p style="font-size: 65px; font-weight: bold;">Database</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-excel-icon.jpg" alt="" width="350" /></p>
+<p style="font-size: 65px; font-weight: bold;">Spreadsheets / CSV</p></section>  
+                    			                    
+                    		<section><p>&nbsp;</p>
+<p>&nbsp;</p>
+<h1>&lt; XML / &gt;</h1></section>  
+                    			                    
+                    		<section><p>&nbsp;</p>
+<p>&nbsp;</p>
+<h1>&lt; HTML / &gt;</h1></section>  
+                    			                    
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-question-mark.png" alt="" width="250" /></p>
+<p style="font-size: 65px; font-weight: bold;">Where Is Data Stored?</p></section>  
+                    			                    
+                    		<section><p><br /><br /></p>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-desktop.png" alt="" width="290" /></p>
+<p style="font-size: 65px; font-weight: bold;">Desktop</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-network-nodes.png" alt="" width="290" /></p>
+<p style="font-size: 65px; font-weight: bold;">Network</p></section>  
+                    			                    
+                    		<section><p><br /><br /></p>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-database-new.png" alt="" width="290" /></p>
+<p style="font-size: 65px; font-weight: bold;">Database</p></section>  
+                    			                    
+                    		<section><h2>Amazon S3 (Storage)</h2>
+<p><img style="margin-bottom: 60px;" src="https://s3.amazonaws.com/kinlane-productions/AWS_LOGO_CMYK.jpg" alt="" width="275" /><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-documents.png" alt="" width="200" /></p></section>  
+                    			                    
+                    		<section><p><br /><br /></p>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/dropbox/dropbox-logo.png" alt="" width="290" /></p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-github.jpg" alt="" width="225" /></p>
+<p style="font-size: 65px; font-weight: bold;">Github</p></section>  
+                    			                    
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-google-drive-icon.png" alt="" width="225" /></p>
+<p style="font-size: 65px; font-weight: bold;">Google Drive</p></section>  
+                    			                    
+                    		<section><p><br /><br /></p>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-target.png" alt="" width="290" /></p>
+<p style="font-size: 65px; font-weight: bold;">Low Hanging Fruit</p></section>  
+                    			                    
+                    		<section><p><br /><br /></p>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-centralized.png" alt="" width="290" /></p>
+<p style="font-size: 65px; font-weight: bold;">Centralized</p></section>  
+                    			                    
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-question-mark.png" alt="" width="250" /></p>
+<p style="font-size: 65px; font-weight: bold;">Why Are We Doing This?</p></section>  
+                    			                    
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-powered-business.png" alt="" width="550" /></p>
+<p>&nbsp;</p>
+<p style="font-size: 65px; font-weight: bold;">API Powered Business</p></section>  
+                    			                    
+                    		<section><p><br /><br /></p>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/restlet/Restlet-whiteBg.png" alt="" width="290" /></p>
+<p style="font-size: 65px; font-weight: bold;">Getting Started With APIs</p>
+<p style="font-size: 65px; font-weight: bold;">#RESTLET</p></section>  
+                    		          
+                    
+                </div>
+    
+                <!-- The navigational controls UI -->
+                <aside class="controls">
+                    <a class="left" href="#">&#x25C4;</a>
+                    <a class="right" href="#">&#x25BA;</a>
+                    <a class="up" href="#">&#x25B2;</a>
+                    <a class="down" href="#">&#x25BC;</a>
+                </aside>
+    
+                <!-- Presentation progress bar -->
+                <div class="progress"><span></span></div>
+                
+            </div>
+            
+            <script src="http://kinlane.github.com/talks/lib/js/head.min.js"></script>
+            <script src="http://kinlane.github.com/talks/javascripts/reveal.min.js"></script>
+    		<script src="http://kinlane.github.com/talks/javascripts/jquery.awesomeCloud-0.2.min.js"></script>
+		    
+            <script>
+                
+                // Full list of configuration options available here:
+                // https://github.com/hakimel/reveal.js#configuration
+                Reveal.initialize({
+                    controls: true,
+                    progress: true,
+                    history: true,
+                    
+                    theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
+                    transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+    
+                    // Optional libraries used to extend on reveal.js
+                    dependencies: [
+                        { src: 'http://kinlane.github.com/talks/lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    ]
+                });
+                
+            </script>
+
+    </body>
+</html>
