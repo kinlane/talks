@@ -206,7 +206,7 @@ body {
 
 	text-align: left;
 	font-size: 0.55em;
-	font-family: monospace;
+	font-family:"Times New Roman";
 	line-height: 1.2em;
 
 	word-wrap: break-word;
@@ -215,7 +215,7 @@ body {
 }
 
 .reveal code {
-	font-family: monospace;
+	font-family:"Times New Roman";
 	overflow-x: auto;
 }
 
