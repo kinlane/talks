@@ -1,0 +1,792 @@
+
+<!doctype html>  
+<html lang="en">
+
+<head> 
+    <meta charset="utf-8">
+    
+    <title>The Tech, Business, and Politics of APIs in 2015</title>
+
+    <meta name="description" content="A walk through the history of APIs, API design & planning, API development, API evangelism and whats next when it comes to APIs.">
+    <meta name="author" content="Kin Lane">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/main.css">
+    <link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="http://kinlane.github.com/lib/css/zenburn.css">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    
+</head>
+        
+        <body>
+            
+            <div class="reveal">
+    
+                <!-- Used to fade in a background when a specific slide state is reached -->
+                <div class="state-background"></div>
+                
+                <!-- Any section element inside of this container is displayed as a slide -->
+                <div class="slides">
+            
+			        		<section>
+			        			<p><br /></p>
+			        			<p><br /></p>
+			        			<h1>Kin Lane</h1>
+								<h1>(API Evangelist)</h1>
+								<p><br /></p>
+								<h3>The Tech, Business, and Politics of APIs in 2015</h3>
+								<h3>Gluecon</h3>
+								<h3>May 2015</h3>
+							</section>  
+		
+		            		<section>
+		            			<p><br /></p>
+		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png" width="400" /></p>
+		                	</section>   
+		                	
+		            		<section>
+		            			<p><br /></p>
+		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/kin-lane/kinlane-white-house-3-web.jpg" width="400" /></p>
+		                	</section> 
+		                	
+		            		<section>
+		            			<p><br /></p>
+		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-storytelling.png" width="550" /></p>
+		                	</section> 		                			                	
+                    			                    
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h1>api.apievangelist.com/blog/</h1>
+                    			<p><br /></p>
+                    			<h2>{"title":"APIs Are The Future"}</h2>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h3>(An API For My Blog)</h3>
+                        	</section>  
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h1>api.apievangelist.com/serviceproviders/</h1>
+                    			<h1>api.apievangelist.com/apis/</h1>
+                    			<p><br /></p>
+                    			<h2>{"company":"3Scale"}</h2>
+                    			<p><br /></p                    			
+                    			<p><br /></p>
+                    			<h3>(More Endpoints To Track On APIs And Service Providers)</h3>                    			
+                        	</section>   
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h1>LAMP Stack - MySQL (RDS) + PHP / Linux (EC2)</h1>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h3>(Easiest Stack Possible)</h3>                    			
+                        	</section>                          	                      	
+                    			   
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h1>api.apievangelist.com/tools/</h1>
+                    			<p><br /></p>
+                    			<h2>{"tool":"APITools"}</h2>                    			
+                    			<p><br /></p>
+                    			<h3>(Keeping An Eye On Open Source Tools)</h3>
+                        	</section>  
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h1>api.apievangelist.com/links/</h1>
+                    			<p><br /></p>
+                    			<h2>{"url":"apievangelist.com"}</h2>                    			
+                    			<p><br /></p>
+                    			<h3>(Organizing Valuable Links)</h3>
+                        	</section>  
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h1>api.apievangelist.com/links/curation/</h1>
+                    			<p><br /></p>
+                    			<h2>{"url":"programmableweb.com"}</h2>                      			
+                    			<p><br /></p>
+                    			<h3>(Adding Curation To My Link API)</h3>
+                        	</section>   
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h1>api.apievangelist.com/links/linkrot/</h1>
+                    			<p><br /></p>
+                    			<h2>{"url":"api.netflix.com"}</h2>  
+                    			<p><br /></p>
+                    			<h3>(Managing Linkrot Across My Site)</h3>
+                        	</section>   
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h1>api.apievangelist.com/links/screenshots/</h1>
+                    			<p><br /></p>
+                    			<h2>{"image":"twitter.com/homepage.png"}</h2>
+                    			<p><br /></p>
+                    			<h3>(Taking A Screenshot Of Each Link)</h3>
+                        	</section>        
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h1>api.apievangelist.com/companies/</h1>
+                    			<h1>api.apievangelist.com/people/</h1>
+                    			<p><br /></p>
+                    			<h2>{"people":"Mike Amundsen"}</h2>
+                    			<p><br /></p>
+                    			<h3>(Taking A Screenshot Of Each Link)</h3>
+                        	</section> 
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h1>api.apievangelist.com/images/</h1>
+                    			<p><br /></p>
+                    			<h2>{"image":"api-evangelist-logo.png"}</h2>
+                    			<p><br /></p>
+                    			<h3>(Centrally Manage Images)</h3>
+                        	</section>   
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h1>api.apievangelist.com/images/resize/</h1>
+                    			<h1>api.apievangelist.com/images/crop/</h1>
+                    			<h1>api.apievangelist.com/images/compress/</h1>
+                    			<p><br /></p>
+                    			<h2>{"width":"100"}</h2>
+                    			<p><br /></p>
+                    			<h3>(Utilties To Assist In Managing My Images)</h3>
+                        	</section>    
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h1>api.apievangelist.com/images/conversion/</h1>
+                    			<h1>api.apievangelist.com/file/conversion/</h1>
+                    			<h1>api.apievangelist.com/url/parse/</h1>
+                    			<h1>api.apievangelist.com/database/backups/</h1>
+                    			<h1>api.apievangelist.com/log/sync/</h1>
+                    			<h1>api.apievangelist.com/dns/backup/</h1>
+                    			<p><br /></p>
+                    			<h3>(Utilties To Manage Entire Stack)</h3>
+                        	</section>    
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/talks/3scale/API-Management+-3scale-API-Management-Solution.png" width="700" /></p>
+                    			<p><br /></p>
+                    			<h3>(3Scale For My API Infrastructure)</h3>
+                        	</section>    
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/talks/3scale/API-Evangelist-Core-APIs.png" width="700" /></p>
+                    			<p><br /></p>
+                    			<h3>(Deployed API Evangelist Portal)</h3>
+                        	</section>  
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/talks/3scale/building-block-apis.png" width="700" /></p>
+                    			<p><br /></p>
+                    			<h3>(Kept Adding New APIs)</h3>
+                        	</section>     
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/talks/3scale/apievangelist-backend-database.png" width="600" /></p>
+                    			<p><br /></p>
+                    			<h3>(Messy Database Backend)</h3>
+                        	</section>    
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-mess.png" width="425" /></p>
+                    			<p><br /></p>
+                    			<h3>(API Mess)</h3>
+                        	</section>                         	
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-broken-link.png" width="300" /></p>
+                    			<p><br /></p>
+                    			<h3>(Architecture Failure)</h3>
+                        	</section>  
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-server-reboot.png" width="350" /></p>
+                    			<p><br /></p>
+                    			<h3>(Server Reboot)</h3>
+                        	</section> 
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-swagger-round.png" width="350" /></p>
+                    			<p><br /></p>
+                    			<h3>(Swagger)</h3>
+                        	</section>                         	                         	                        	                     	                    	                        	                     	                    	                     	                      	                         	                  	                      	                       	                        	                    			     
+
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/swagger/swagger-code-2.png" width="700" /></p>
+                    			<p><br /></p>
+                    			<h3>(Swagger)</h3>
+                        	</section>      
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/apis-json/apis-json.png" width="500" /></p>
+                        	</section>   
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/apis-json/apis-json-apis-with-swagger.png" width="700" /></p>
+                        	</section>                          	
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-internal-api.png" width="325" /></p>
+                    			<p><br /></p>
+                    			<h3>(APIs.json Collection)</h3>
+                        	</section>       
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-map-pin.png" width="350" /></p>
+                    			<p><br /></p>
+                    			<h3>(Discovery Map)</h3>
+                        	</section>     
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/docker/docker-logo.png" width="350" /></p>
+                        	</section>    
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-stacks.png" width="350" /></p>
+                    			<p><br /></p>
+                    			<h3>(Independent API Stacks)</h3>
+                        	</section>   
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-micro-definition.png" width="350" /></p>
+                    			<p><br /></p>
+                    			<h3>(Microservices)</h3>
+                        	</section>   
+                        	
+                    		<section>
+								<p><br /></p>
+								<p><br /></p>
+								<h2>minimal surface</h2>
+								<h2>minimal on disk</h2>
+								<h2>minimal compute</h2>
+								<h2>minimal message</h2>
+								<h2>minimal network</h2>
+								<h2>minimal time to rebuild</h2>
+								<h2>minimal time to throw away</h2>
+								<h2>minimal ownership</h2>
+								<h2>minimal dependencies</h2>
+                        	</section>    
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/swagger/swagger-code-unique-id.png" width="700" /></p>
+                    			<p><br /></p>
+                    			<h3>(Swagger As Unique API Identifier)</h3>
+                        	</section>   
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/apis-json/apis-json-apis-with-swagger.png" width="700" /></p>
+                    			<p><br /></p>
+                    			<h3>(APIs.json)</h3>
+                        	</section>    
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/apis-json/kin-lane-master-stack.png" width="575" /></p>
+                    			<p><br /></p>
+                    			<h3>(Kin Lane Master Stack)</h3>
+                        	</section> 
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/kin.png" width="225" /></p>
+                    			<p><br /></p>
+                    			<h3>(Kin Lane)</h3>
+                        	</section>  
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/apis-json/kin-lane-master-apis.png" width="270" /></p>
+                    			<p><br /></p>
+                    			<h3>(25+ APIs)</h3>
+                        	</section>  
+
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h1>api.apievangelist.com/links/</h1>
+                    			<h1>api.apievangelist.com/curated/</h1>
+                    			<h1>api.apievangelist.com/linkrot/</h1>
+                    			<h1>api.apievangelist.com/screencapture/</h1>
+                    			<p><br /></p>                  			
+                    			<p><br /></p>
+                    			<h3>(Decoupling of Link Services)</h3>                    			
+                        	</section>   
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h1>api.apievangelist.com/images/</h1>
+                    			<h1>api.apievangelist.com/resize/</h1>
+                    			<h1>api.apievangelist.com/compression/</h1>
+                    			<h1>api.apievangelist.com/filter/</h1>
+                    			<p><br /></p>                  			
+                    			<p><br /></p>
+                    			<h3>(Decoupling of Image Services)</h3>                    			
+                        	</section>   
+                        	
+                    		<section>      
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-amazon-google-microsoft-containers.png" width="450" /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h3>(Choice Of Container Infrastructure)</h3>                    			
+                        	</section>   
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-github.png" width="200" /></p>
+                    			<p><br /></p>
+                    			<h3>(Github)</h3>
+                        	</section>     
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/talks/3scale/github-repo-store.png" width="800" /></p>
+                    			<p><br /></p>
+                    			<h3>(Github Repo As Store)</h3>
+                        	</section> 
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/apis-json/apis-json-code-2.png" width="550" /></p>
+                    			<p><br /></p>
+                    			<h3>(APIs.json)</h3>
+                        	</section>    
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/talks/3scale/raspberry-pi-docker.png" width="550" /></p>
+                        	</section>   
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/talks/3scale/3scale-localized.png" width="450" /></p>
+                    			<p><br /></p>
+                    			<h3>(Localize My 3Scale)</h3>
+                        	</section>   
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h1>api.apievangelist.com/users/</h1>
+                    			<p><br /></p> 
+                    			<h2>User Create</h2>
+								<h2>User Read</h2>
+								<h2>User Update</h2>
+								<h2>User Delete</h2>               				                			
+                    			<p><br /></p>
+                    			<h3>(Localize User Management)</h3>                    			
+                        	</section> 
+                       	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h1>api.apievangelist.com/account/</h1>
+                    			<p><br /></p> 
+                    			<h2>Account Set Credit Card</h2>
+								<h2>Account Delete Credit Card</h2>
+								<h2>Invoice By Account</h2>
+								<h2>Invoice Line Item List</h2>
+								<h2>Invoice Payment Transaction List</h2>                				                			
+                    			<p><br /></p>
+                    			<h3>(Localize Account Management)</h3>                    			
+                        	</section>
+                      	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h1>api.apievangelist.com/services/</h1>
+                    			<p><br /></p> 
+                    			<h2>Service Plan List</h2>
+								<h2>Service Plan Feature List</h2>
+								<h2>Service Plan Set To Default</h2>               				                			
+                    			<p><br /></p>
+                    			<h3>(Localize Service Management)</h3>                    			
+                        	</section>
+                   	
+                    		<section>
+                    			<h1>api.apievangelist.com/applications/</h1>
+                    			<p><br /></p> 
+								<h2>Application List</h2>
+								<h2>Application Create</h2>
+								<h2>Application Read</h2>    
+								<h2>Application Change Plan</h2>     
+								<h2>Application Key List</h2>     
+								<h2>Application Key Create</h2>     
+								<h2>Application Key Delete</h2>     
+								<h2>Application Usage by Metric</h2>                    				                			
+                    			<p><br /></p>
+                    			<h3>(Localize Application Management)</h3>                    			
+                        	</section>     
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/talks/3scale/Interactive-Docs-3scale-Documentation.png" width="600" /></p>
+                    			<p><br /></p>
+                    			<h3>(3Scale API Stack)</h3>
+                        	</section>                         	
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<table align"center" width="200" style="margin-left: 450px;">
+                    				<tr>
+                    					<td><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/kin.png" width="225" style="padding-bottom: 100px;" /></td>
+                    					<td><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png" width="300" /></td>
+                    				</tr>
+                    			</table>
+                    			
+                    			<p><br /></p>
+                    			<h3>(Kin Lane To API Evangelist)</h3>
+                        	</section>  
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/talks/3scale/3scale-key.png" width="450" /></p>
+                    			<p><br /></p>
+                    			<h3>(3Scale Account Key)</h3>
+                        	</section>  
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h1>api.apievangelist.com/images/resize/</h1>
+                    			<h1>api.apievangelist.com/screencapture/</h1>
+                    			<h1>api.apievangelist.com/api/swagger/</h1>
+                    			<h1>api.apievangelist.com/api/csv/conversion/</h1>
+                    			<p><br /></p>                  			
+                    			<p><br /></p>
+                    			<h3>(Interest In Utility APIs)</h3>                    			
+                        	</section> 
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-wholesale.png" width="400" /></p>
+                    			<p><br /></p>
+                    			<h3>(Wholesale APIs)</h3>
+                        	</section>                         	                         	                       	                       	                   	                        	                        	                        	                      	                       	                      	                         	                    	                       	                       	                      	                        	                       	                        	                       	                       	                      	                       	                      	                      	                      	                  	                       	                    	                        	                     	                    	                        	                     	                    	                     	                      	                         	                  	                      	                       	                        	                    			     
+                    			     
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-provider.png" width="400" /></p>
+                    			<p><br /></p>
+                    			<h3>(Provide APIs)</h3>
+                        	</section>   
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-open.png" width="400" /></p>
+                    			<p><br /></p>
+                    			<h3>(Open For Business)</h3>
+                        	</section>  
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-services.png" width="400" /></p>
+                    			<p><br /></p>
+                    			<h3>(API Service Provider)</h3>
+                        	</section>   
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/sandbox/Sandbox-Mock-Server.png" width="750" /></p>
+                        	</section>                         	
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/apimatic/apimatic-kin-lane-apis.png" width="750" /></p>
+                        	</section>  
+                        	 
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/postman/postman-logo.png" width="225" /></p>
+                    			<p><br /></p>
+                    			<h3>(Postman)</h3>
+                        	</section>                          	                        	                        	
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/api-science/api-science-logo.png" width="400" /></p>
+                        	</section> 
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/runscope/runscope-logo.png" width="435" /></p>
+                        	</section>                              	   
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/smartbear/SmartBear-Logo.png" width="435" /></p>
+                        	</section>
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-logo.png" width="435" /></p>
+                        	</section>                        	
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/apis-json/apis-json-properties-units-of-transaction.png" width="750" /></p>
+                    			<p><br /></p>
+                    			<h3>(APIs.json)</h3>
+                        	</section>                          	   
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/talks/3scale/blog-apis-json-postman.png" width="750" /></p>
+                    			<p><br /></p>
+                    			<h3>(APIs.json)</h3>
+                        	</section>       
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/apis-io/apis-io.png" width="450" /></p>
+                        	</section>    
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-service-providers/wso2/wso2-logo-white-400X180-tr.png" width="250" /></p>
+                        	</section>                          	
+
+                    		<section>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/apis-json/apis-json-properties-units-of-transaction.png" width="725" /></p>
+                    			<p><br /></p>
+                    			<h3>(APIs.json Inbound Services)</h3>
+                        	</section>   
+                        	
+                    		<section>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/apis-json/apis-json-properties-tech-biz-politics.png" width="625" /></p>
+                    			<h3>(APIs.json Outbound Services)</h3>
+                        	</section> 
+
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-recycling.jpg" width="250" /></p>
+                    			<p><br /></p>
+                    			<h3>(Lifecycle of APIs.json Services)</h3>
+                        	</section>   
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-apis-json-community-driven.png" width="375" /></p>
+                    			<p><br /></p>
+                    			<h3>(Community of APIs.json Services)</h3>
+                        	</section>  
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<h1>API Testing</h1>
+                    			<h1>API Monitoring</h1>
+                    			<h1>API Discovery</h1>
+                    			<h1>API Performance</h1>
+                    			<h1>API Proxy</h1>
+                    			<h1>API Cache</h1>
+                    			<h1>API Performance</h1>
+                    			<h1>API Visualization</h1>
+                    			<h1>API Dictionary</h1>
+                    			<p><br /></p>                  			
+                    			<h3>(APIs.json Services)</h3>                    			
+                        	</section>  
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-technology-of-apis.png" width="350" /></p>
+                    			<p><br /></p>
+                    			<h3>(Technology of APIs)</h3>
+                        	</section>
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-business-of-apis.png" width="350" /></p>
+                    			<p><br /></p>
+                    			<h3>(Business of APIs)</h3>
+                        	</section>
+                        	
+                    		<section>
+                    			<p><br /></p>
+                    			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-politics-of-apis.png" width="350" /></p>
+                    			<p><br /></p>
+                    			<h3>(Politics of APIs)</h3>
+                        	</section>
+
+		            		<section>
+		            			<p><br /></p>
+		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-website.png" alt="" width="300" /></p>
+		            			<p><br /></p>
+								<h3>(Websites)</h3>
+							</section> 
+		            			                    
+		            		<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-iphone.png" alt="" width="200" /></p>
+		            			<p><br /></p>
+								<h3>(Mobile)</h3>
+							</section> 
+		            			                    
+		            		<section>
+		            			<p><br /></p>
+		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-single-page-apps.png" alt="" width="300" /></p>
+		            			<p><br /></p>
+								<h3>(Single Page Apps)</h3>
+							</section> 
+		            			                    
+		            		<section>
+		            			<p><br /></p>
+		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-internet-of-things.png" alt="" width="400" /></p>
+		            			<p><br /></p>
+								<h3>(Internet of Things)</h3>
+							</section>                         	                          	                       	                        	                       	                        	                       	                         	             	                       	                    	                   	                        	                       	                       	                   			     
+		                    			                           			                    
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h1>The End</h1>
+								<p><br /></p>
+								<h4>By Kin Lane (@kinlane)</h4>
+								<p><br /></p>
+								<p align="center"><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist/api-evangelist-logo-400.png" width="300" /></p>
+							</section>                      		          
+                    
+                </div>
+    
+                <!-- The navigational controls UI -->
+                <aside class="controls">
+                    <a class="left" href="#">&#x25C4;</a>
+                    <a class="right" href="#">&#x25BA;</a>
+                    <a class="up" href="#">&#x25B2;</a>
+                    <a class="down" href="#">&#x25BC;</a>
+                </aside>
+    
+                <!-- Presentation progress bar -->
+                <div class="progress"><span></span></div>
+                
+            </div>
+            
+            <script src="http://kinlane.github.com/talks/lib/js/head.min.js"></script>
+            <script src="http://kinlane.github.com/talks/javascripts/reveal.min.js"></script>
+    		<script src="http://kinlane.github.com/talks/javascripts/jquery.awesomeCloud-0.2.min.js"></script>  
+		
+		    
+            <script>
+                
+                // Full list of configuration options available here:
+                // https://github.com/hakimel/reveal.js#configuration
+                Reveal.initialize({
+                    controls: true,
+                    progress: true,
+                    history: true,
+                    
+                    theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
+                    transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+    
+                    // Optional libraries used to extend on reveal.js
+                    dependencies: [
+                        { src: 'http://kinlane.github.com/talks/lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    ]
+                });
+                
+            </script>
+
+    </body>
+</html>

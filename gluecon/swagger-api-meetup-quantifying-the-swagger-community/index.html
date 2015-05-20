@@ -1,0 +1,664 @@
+
+
+<!doctype html>  
+<html lang="en">
+
+<head> 
+    <meta charset="utf-8">
+    
+    <title>Swagger API Meetup - Quantifying the Swagger Community</title>
+
+    <meta name="description" content="A walk through the history of APIs, API design & planning, API development, API evangelism and whats next when it comes to APIs.">
+    <meta name="author" content="Kin Lane">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"796a2c4712957f7aa272a073b0fe9048",petok:"4ff59b4a00a971e7511f05cbcc0c889234f94c40-1431912061-1800",zone:"laneworks.net",rocket:"0",apps:{}}];CloudFlare.push({"apps":{"ape":"e8479a9727fcd8a96cb90409d065f83c"}});!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=7e13c32551/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/main.css">
+    <link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="http://kinlane.github.com/lib/css/zenburn.css">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    
+</head>
+        
+        <body>
+            
+            <div class="reveal">
+    
+                <!-- Used to fade in a background when a specific slide state is reached -->
+                <div class="state-background"></div>
+                
+                <!-- Any section element inside of this container is displayed as a slide -->
+                <div class="slides">
+            
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/events/api-meetup/Swagger-API-Meetup-1.png" width="800" /></p>
+		                	</section> 		
+		                	
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/events/api-meetup/Swagger-API-Meetup-2.png" width="800" /></p>
+		                	</section> 	            
+		                	
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-swagger-round.png" width="350" /></p>
+		            			<h3>Swagger</h3>
+		                	</section> 		
+		                	
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-community.png" width="350" /></p>
+		            			<h3>Community</h3>
+		                	</section> 						                							
+					
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-internal.png" width="350" /></p>
+		            			<h3>Internal Integrations (54)</h3>
+		                	</section> 								
+					
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/serviceproviders/3scale-logo.jpg" width="425" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/akana-logo-formerly-soa.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/apache-apollo-logo.png" width="350" /></p>
+		            			<h3>Apache</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/apache-camel.jpeg" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/api-science/api-science-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/serviceproviders/apigee-logo.gif" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/apigility-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/apimatic/apimatic-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/apis-io.png" width="500" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/apisdotjson.png" width="500" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/api-tools/apitools-logo.png" width="500" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/appnow-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/ardoq-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Axway_Logo_4_Color.jpg" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/beego_logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/catch_logo.gif" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/cloud-elements-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/dell-boomi-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/django-rest-framework.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/dreamfactory.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/serviceproviders/elasticio_logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/esspresso-logic-logic.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/gluu-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/bw-ibm-logo.jpeg" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/LucyPNG.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Magnolia-CMS-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/microsoft-azure-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/neo4j-logo-2015.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1620_logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/nomos-software-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/open311-logo.jpeg" width="250" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/opendaylight-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/serviceproviders/openi-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/200px-OpenShift-LogoType.svg.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/paw-http-client.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/pivotal-logo.jpeg" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/postman-rest-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/220px-Quandl_Logol.svg.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/rest-united.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/RESTBase-Logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/RESTFiddle-Logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/apispark-logo" width="425" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png" width="425" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/get-sandbox-logo.png" width="450" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/service-stack.png" width="450" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/SmartBear-Logo.png" width="450" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/serviceproviders/snaplogic-logo.png" width="400" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/strongloop-logo.png" width="450" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/synapp-io-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/tibco-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/visual-studio-2013-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/wavemaker-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/wso2-logo-white-800X360.jpg" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/536_logo.png" width="350" /></p>
+		                	</section> 								
+								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-external.png" width="350" /></p>
+		            			<h3>External Integrations (40)</h3>
+		                	</section> 										
+						
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/AngularJS_logo.svg.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/apache-ant.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/apache-camel.jpeg" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/apache-maven.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Apache_Wink_Logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/arangodb_logo2.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/backbone-rest.png" width="450" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/cake-logo.png" width="300" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/ckan-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/django-rest-framework.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/tastypie2.jpg" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1910_logo.jpg" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/express-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/feathers-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flask-logo.png" width="450" /></p>
+		                	</section>   															
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flask-restful-logo.png" width="475" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/FubuMvc_Logo_small-300x94.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/gradle.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/grails-logo.jpg" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/grape-logo.jpeg" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/grunt-logo.jpg" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/guzzle-logo.png" width="250" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/jersey-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/laravel-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/linqpad-logo.jpg" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/mongodb.jpeg" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/nancy-logo.png" width="250" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/OpenRasta-Logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/pyramid-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/salesforce-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sequelize-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/silex-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sinatra-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/spray-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/spring-by-pivotal.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/symfony-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/tornado-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/veneer-logo.png" width="350" /></p>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/yeoman-logo.png" width="350" /></p>
+		                	</section>    								
+						
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-building-blocks-design.png" width="300" /></p>
+		            			<h3>Building Blocks</h3>
+		                	</section> 									
+						
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-schema.png" width="300" /></p>
+		            			<h3>Specification</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-generate.png" width="300" /></p>
+		            			<h3>Generator</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-parse.png" width="300" /></p>
+		            			<h3>Parser</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-valid.png" width="300" /></p>
+		            			<h3>Validator</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-schema.png" width="300" /></p>
+		            			<h3>Schema</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-conversion.png" width="300" /></p>
+		            			<h3>Converter</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-database-new.png" width="300" /></p>
+		            			<h3>Database</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-mock-interface.png" width="300" /></p>
+		            			<h3>Mock</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-code.png" width="300" /></p>
+		            			<h3>Server</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-code.png" width="300" /></p>
+		            			<h3>Client</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-single-page-apps.png" width="300" /></p>
+		            			<h3>Single Page Application</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-command-line.png" width="300" /></p>
+		            			<h3>Command-Line</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-command-line.png" width="300" /></p>
+		            			<h3>Powershell</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-authentication-test.png" width="300" /></p>
+		            			<h3>Testing</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-heart-monitor.png" width="300" /></p>
+		            			<h3>Monitoring</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-proxy.png" width="300" /></p>
+		            			<h3>Proxy</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-arrow-aggregate.png" width="300" /></p>
+		            			<h3>Aggregator</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-editor.png" width="300" /></p>
+		            			<h3>Editors</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-documentation-interactive.png" width="300" /></p>
+		            			<h3>Documentation</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-editor.png" width="300" /></p>
+		            			<h3>IDE Plugin</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-forms.png" width="300" /></p>
+		            			<h3>Forms</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-clock.png" width="300" /></p>
+		            			<h3>Real-Time</h3>
+		                	</section>   								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-visualization.png" width="300" /></p>
+		            			<h3>Visualization</h3>
+		                	</section>   								
+								
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-visualization.png" width="350" /></p>
+		            			<h3>Visualization</h3>
+		                	</section>   																										
+		
+		            		<section>
+		            			<p><br /></p>
+		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-exlamation-point.png" width="125" /></p>
+		                	</section>   
+		                	
+		            		<section>
+		            			<p><br /></p>
+		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-question-mark.png" width="300" /></p>
+		                	</section>   
+		                	
+		            		<section>
+		            			<p><br /></p>
+		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-storytelling.png" width="550" /></p>
+		                	</section>   		                	
+		                	                           			                    
+                    		<section>
+                    			<p><br /></p>
+                    			<p><br /></p>
+                    			<h1>The End</h1>
+								<p><br /></p>
+								<h4>By Kin Lane (@kinlane)</h4>
+								<p><br /></p>
+								<p align="center"><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist/api-evangelist-logo-400.png" width="300" /></p>
+							</section>  
+							
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/events/api-meetup/Swagger-API-Meetup-1.png" width="800" /></p>
+		                	</section> 		
+		                	
+							<section>
+		            			<p><br /></p>
+		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/events/api-meetup/Swagger-API-Meetup-2.png" width="800" /></p>
+		                	</section> 								                    		          
+                    
+                </div>
+    
+                <!-- The navigational controls UI -->
+                <aside class="controls">
+                    <a class="left" href="#">&#x25C4;</a>
+                    <a class="right" href="#">&#x25BA;</a>
+                    <a class="up" href="#">&#x25B2;</a>
+                    <a class="down" href="#">&#x25BC;</a>
+                </aside>
+    
+                <!-- Presentation progress bar -->
+                <div class="progress"><span></span></div>
+                
+            </div>
+            
+            <script src="http://kinlane.github.com/talks/lib/js/head.min.js"></script>
+            <script src="http://kinlane.github.com/talks/javascripts/reveal.min.js"></script>
+    		<script src="http://kinlane.github.com/talks/javascripts/jquery.awesomeCloud-0.2.min.js"></script>  
+		
+		    
+            <script>
+                
+                // Full list of configuration options available here:
+                // https://github.com/hakimel/reveal.js#configuration
+                Reveal.initialize({
+                    controls: true,
+                    progress: true,
+                    history: true,
+                    
+                    theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
+                    transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+    
+                    // Optional libraries used to extend on reveal.js
+                    dependencies: [
+                        { src: 'http://kinlane.github.com/talks/lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    ]
+                });
+                
+            </script>
+
+    </body>
+</html>
