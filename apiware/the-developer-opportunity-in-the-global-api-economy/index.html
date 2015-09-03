@@ -1,0 +1,589 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>The Tech, Business, and Politics of APIs in 2015</title>
+
+    <meta name="description" content="A walk through the history of APIs, API design & planning, API development, API evangelism and whats next when it comes to APIs.">
+    <meta name="author" content="Kin Lane">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/main.css">
+    <link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="http://kinlane.github.com/lib/css/zenburn.css">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+		.wordcloud {
+			border: 0px solid #000;
+			height: 3in;
+			margin: 0.1in auto;
+			padding: 0;
+			page-break-after: always;
+			page-break-inside: avoid;
+			width: 6in;
+		}
+    </style>
+
+</head>
+
+        <body>
+
+            <div class="reveal">
+
+                <!-- Used to fade in a background when a specific slide state is reached -->
+                <div class="state-background"></div>
+
+                <!-- Any section element inside of this container is displayed as a slide -->
+                <div class="slides">
+
+
+
+                    		<section><h1>Kin Lane</h1>
+<h3>API Evangelist</h3>
+<p>&nbsp;</p>
+<p>The Developer Opportunity in the Global API Economy</p>
+<p>&nbsp;</p>
+<p>September 2015</p>
+<ul style="font-size: 18px; padding-top: 20px;">
+<li class="fragment">25 Years Database Engineer</li>
+<li class="fragment">15 Years Web Applications</li>
+<li class="fragment">8 Years Cloud Computing</li>
+<li class="fragment">4 Years Studying APIs</li>
+</ul></section>
+
+                    		<section><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png" width="300" /><br />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/api-evangelist-logo-400.png" width="550" align="center" />
+                        <br />
+                        <p align="center" style="font-size: 24px;">www.apievangelist.com</p></section>
+
+                    		<section><h1>Target</h1>
+                        <ul style="font-size: 18px; padding-top: 20px;">
+                            <li>Individuals</li>
+                            <li>Startups</li>
+                            <li>SMB</li>
+                            <li>Enterprise</li>
+                            <li>Government</li>
+                        </ul></section>
+
+                    		<section><h2>Roy Fieldings Dissertation</h2>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/roy-fielding/roy-fielding-dissertation-home-page.png" alt="" width="550" /></p></section>
+
+                    		<section><p><br /> <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/salesforce-logo.png" alt="" width="325" /></p>
+<p style="font-size: 50px; font-weight: bold;">(Contacts / Relationships / Sales)</p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/amazon/amazon-com-logo.jpg" alt="" width="375" /></p>
+<p style="font-size: 50px; font-weight: bold;">(Products)</p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/flickr/flickr-logo.jpeg" alt="" width="300" /></p>
+<p style="font-size: 50px; font-weight: bold;">(Images)</p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/delicious/delicious-logo.jpg" alt="" width="375" /></p>
+<p style="font-size: 50px; font-weight: bold;">(Links)</p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/twitter/tweet-bird-blue-white.png" alt="" width="250" /></p>
+<p style="font-size: 50px; font-weight: bold;">(Social)</p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/google/google-maps-logo.jpg" alt="" width="350" /></p>
+<p style="font-size: 50px; font-weight: bold;">(Mapping)</p></section>
+
+                    		<section><p><img style="margin-bottom: 60px;" src="https://s3.amazonaws.com/kinlane-productions/AWS_LOGO_CMYK.jpg" alt="" width="275" /><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-documents.png" alt="" width="200" /></p>
+<p style="font-size: 50px; font-weight: bold;">S3 (Files)</p></section>
+
+                    		<section><p><img style="margin-bottom: 60px;" src="https://s3.amazonaws.com/kinlane-productions/AWS_LOGO_CMYK.jpg" alt="" width="275" /><img style="padding: 15px;" src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-servers.png" alt="" width="175" /></p>
+<p style="font-size: 50px; font-weight: bold;">EC2 (Compute)</p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/instagram/Instagram_logo.png" alt="" width="250" /></p>
+<p style="font-size: 50px; font-weight: bold;">(Photos)</p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/youtube/youtube-logo.png" alt="" width="300" /></p>
+<p style="font-size: 50px; font-weight: bold;">(Videos)</p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/twilio/twilio-logo-2100x650.png" alt="" width="350" /></p>
+<p style="font-size: 50px; font-weight: bold;">(SMS / MMS / Voice)</p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/sendgrid/sendgrid-logo.jpeg" alt="" width="350" /></p>
+<p style="font-size: 50px; font-weight: bold;">(Email)</p></section>
+
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/stripe/Stripe-logo.jpeg" alt="" width="350" /></p>
+<p style="font-size: 50px; font-weight: bold;">(Payments)</p></section>
+
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/paypal/paypal-logo.jpeg" alt="" width="350" /></p>
+<p style="font-size: 50px; font-weight: bold;">(Payments)</p></section>
+
+                    		<section><h1>Commerce</h1>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-cart-checkout.png" alt="" width="275" /></p></section>
+
+                    		<section><h1>Social</h1>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-social.png" alt="" width="275" /></p></section>
+
+                    		<section><h2>Media</h2>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-media.png" alt="" width="275" /></p></section>
+
+                    		<section><h2>Cloud Computing</h2>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-services.png" alt="" width="300" /></p></section>
+
+                    		<section><h1>Geo</h1>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-geo-pin.jpeg" alt="" width="275" /></p></section>
+
+                    		<section><h1>Messaging</h1>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-messaging-system.png" alt="" width="275" /></p></section>
+
+                    		<section><h2>Payments</h2>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/ukrainian-currency-clip-art.jpg" alt="" width="200" /></p></section>
+
+                    		<section><h2>Evolution</h2>
+<p>&nbsp;</p>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-evolving.png" alt="" width="550" /></p></section>
+
+                    		<section><h2>Essential Resources</h2>
+<p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-tag-cloud-essential-resources.png" alt="" width="650" /></p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-web-apps.png" alt="" width="250" /></p>
+<p style="font-size: 65px; font-weight: bold;">Web Apps</p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-mobile-apps.png" alt="" width="275" /></p>
+<p style="font-size: 65px; font-weight: bold;">Mobile Apps</p></section>
+
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-single-page-apps.png" alt="" width="300" /></p>
+<p>&nbsp;</p>
+<p style="font-size: 50px; font-weight: bold;">Single Page Apps (SPA)</p></section>
+
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-internet-of-things.png" alt="" width="350" /></p>
+<p style="font-size: 50px; font-weight: bold;">(Internet of Things)</p></section>
+
+                    		<section><h1>Programmable Web</h1>
+
+                        <img src="https://s3.amazonaws.com/kinlane-productions/programmable-web.png" width="500" /></section>
+
+                    		<section><h1>The End</h1>
+						<br />
+						<h4>By Kin Lane (@kinlane)</h4>
+						<br />
+						<p align="center"><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist/api-evangelist-logo-400.png" width="300" /></p></section>
+
+
+                </div>
+
+                <!-- The navigational controls UI -->
+                <aside class="controls">
+                    <a class="left" href="#">&#x25C4;</a>
+                    <a class="right" href="#">&#x25BA;</a>
+                    <a class="up" href="#">&#x25B2;</a>
+                    <a class="down" href="#">&#x25BC;</a>
+                </aside>
+
+                <!-- Presentation progress bar -->
+                <div class="progress"><span></span></div>
+
+            </div>
+
+            <script src="http://kinlane.github.com/talks/lib/js/head.min.js"></script>
+            <script src="http://kinlane.github.com/talks/javascripts/reveal.min.js"></script>
+    		<script src="http://kinlane.github.com/talks/javascripts/jquery.awesomeCloud-0.2.min.js"></script>
+
+
+			<script type="text/javascript">
+
+				$(document).ready(function(){
+
+
+				    // business mdels - as a service
+					slide1 = '<span data-weight="12">Software</span>';
+					slide1 = slide1 + '<span data-weight="12">Platform</span>';
+					slide1 = slide1 + '<span data-weight="12">Infrastructure</span>';
+					slide1 = slide1 + '<span data-weight="30">Service</span>';
+
+					slide1 = slide1 + '<span data-weight="20">SaaS</span>';
+					slide1 = slide1 + '<span data-weight="20">PaaS</span>';
+					slide1 = slide1 + '<span data-weight="20">IaaS</span>';
+
+					slide1 = slide1 + '<span data-weight="20">Cloud</span>';
+
+					$('#business-models-aas').append(slide1);
+
+					$("#business-models-aas").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});
+
+					// business mdels - free
+					slide1 = '<span data-weight="12">30 Days</span>';
+					slide1 = slide1 + '<span data-weight="15">Trial</span>';
+					slide1 = slide1 + '<span data-weight="50">FREE</span>';
+					slide1 = slide1 + '<span data-weight="20">Freemium</span>';
+					slide1 = slide1 + '<span data-weight="12">45 Days</span>';
+					slide1 = slide1 + '<span data-weight="12">7 Days</span>';
+					slide1 = slide1 + '<span data-weight="12">60 Days</span>';
+					slide1 = slide1 + '<span data-weight="12">Quantity</span>';
+					slide1 = slide1 + '<span data-weight="12">Intro</span>';
+					slide1 = slide1 + '<span data-weight="12">You Are The Product</span>';
+					slide1 = slide1 + '<span data-weight="12">Free Forever</span>';
+
+					$('#business-models-free').append(slide1);
+
+					$("#business-models-free").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});
+
+
+					// business mdels - developer pays
+					slide1 = '<span data-weight="12">As You Go</span>';
+					slide1 = slide1 + '<span data-weight="15">What You Use</span>';
+					slide1 = slide1 + '<span data-weight="50">Dev Pays</span>';
+					slide1 = slide1 + '<span data-weight="20">Unit</span>';
+					slide1 = slide1 + '<span data-weight="12">Storage</span>';
+					slide1 = slide1 + '<span data-weight="12">Bandwidth</span>';
+					slide1 = slide1 + '<span data-weight="12">Utility</span>';
+					slide1 = slide1 + '<span data-weight="12">Cloud</span>';
+					slide1 = slide1 + '<span data-weight="12">Tiered</span>';
+					slide1 = slide1 + '<span data-weight="12">Enterprise</span>';
+
+					$('#business-models-developer-pays').append(slide1);
+
+					$("#business-models-developer-pays").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});
+
+					// business mdels - developer gets paid
+					slide1 = '<span data-weight="12">Credits</span>';
+					slide1 = slide1 + '<span data-weight="15">Affiliates</span>';
+					slide1 = slide1 + '<span data-weight="50">Dev Gets Paid</span>';
+					slide1 = slide1 + '<span data-weight="20">Advertising</span>';
+					slide1 = slide1 + '<span data-weight="12">Revenue Share</span>';
+					slide1 = slide1 + '<span data-weight="12">Incentives</span>';
+					slide1 = slide1 + '<span data-weight="12">Profits</span>';
+					slide1 = slide1 + '<span data-weight="12">$</span>';
+					slide1 = slide1 + '<span data-weight="12">$</span>';
+					slide1 = slide1 + '<span data-weight="12">$</span>';
+					slide1 = slide1 + '<span data-weight="12">$</span>';
+					slide1 = slide1 + '<span data-weight="12">$</span>';
+
+					$('#business-models-developer-paid').append(slide1);
+
+					$("#business-models-developer-paid").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});
+
+					// business mdels - Indirect
+					slide1 = '<span data-weight="12">Credits</span>';
+					slide1 = slide1 + '<span data-weight="15">Marketing Vehicle</span>';
+					slide1 = slide1 + '<span data-weight="50">Indirect</span>';
+					slide1 = slide1 + '<span data-weight="20">Brand</span>';
+					slide1 = slide1 + '<span data-weight="12">Generate Users</span>';
+					slide1 = slide1 + '<span data-weight="12">Generate Content</span>';
+					slide1 = slide1 + '<span data-weight="12">Traffic Generation</span>';
+					slide1 = slide1 + '<span data-weight="12">Page Views</span>';
+					slide1 = slide1 + '<span data-weight="12">Build Links</span>';
+					slide1 = slide1 + '<span data-weight="12">Generate Data</span>';
+					slide1 = slide1 + '<span data-weight="12">Honey Pot</span>';
+
+					$('#business-models-indirect').append(slide1);
+
+					$("#business-models-indirect").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});
+
+					// business mdels - Research & Developent
+					slide1 = '<span data-weight="12">Development</span>';
+					slide1 = slide1 + '<span data-weight="15">Research</span>';
+					slide1 = slide1 + '<span data-weight="50">Experiment</span>';
+					slide1 = slide1 + '<span data-weight="20">3rd Parties</span>';
+					slide1 = slide1 + '<span data-weight="12">Partners</span>';
+					slide1 = slide1 + '<span data-weight="12">Public</span>';
+					slide1 = slide1 + '<span data-weight="12">Internal</span>';
+					slide1 = slide1 + '<span data-weight="12">Incubation</span>';
+					slide1 = slide1 + '<span data-weight="12">Investment</span>';
+					slide1 = slide1 + '<span data-weight="12">Ecosystem</span>';
+					slide1 = slide1 + '<span data-weight="12">Ideas</span>';
+					slide1 = slide1 + '<span data-weight="12">Outside The Box</span>';
+
+					$('#business-models-research-development').append(slide1);
+
+					$("#business-models-research-development").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});
+
+					// dimensions - providers
+					slide1 = '<span data-weight="10">Microsoft</span>';
+					slide1 = slide1 + '<span data-weight="40">Google</span>';
+					slide1 = slide1 + '<span data-weight="40">Amazon</span>';
+					slide1 = slide1 + '<span data-weight="10">RedHat</span>';
+					slide1 = slide1 + '<span data-weight="10">Digital Ocean</span>';
+					slide1 = slide1 + '<span data-weight="10">Shipyard</span>';
+					slide1 = slide1 + '<span data-weight="10">StackEngine</span>';
+					slide1 = slide1 + '<span data-weight="10">Rackspace</span>';
+					slide1 = slide1 + '<span data-weight="10">Joyent</span>';
+					slide1 = slide1 + '<span data-weight="10">CoreOS</span>';
+					slide1 = slide1 + '<span data-weight="10">OpenStack</span>';
+					slide1 = slide1 + '<span data-weight="10">IBM</span>';
+					slide1 = slide1 + '<span data-weight="10">Deis</span>';
+
+					$('#dimensions-providers').append(slide1);
+
+					$("#dimensions-providers").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});
+
+					// dimensions - geographic
+					slide1 = '<span data-weight="10">Canada</span>';
+					slide1 = slide1 + '<span data-weight="25">US East</span>';
+					slide1 = slide1 + '<span data-weight="25">US West</span>';
+					slide1 = slide1 + '<span data-weight="20">On-Premise</span>';
+					slide1 = slide1 + '<span data-weight="20">Closet</span>';
+					slide1 = slide1 + '<span data-weight="10">Asia</span>';
+					slide1 = slide1 + '<span data-weight="10">Tokyo</span>';
+					slide1 = slide1 + '<span data-weight="10">Singapore</span>';
+					slide1 = slide1 + '<span data-weight="10">Sydney</span>';
+					slide1 = slide1 + '<span data-weight="10">Frankfurt</span>';
+					slide1 = slide1 + '<span data-weight="10">Ireland</span>';
+					slide1 = slide1 + '<span data-weight="10">South America</span>';
+					slide1 = slide1 + '<span data-weight="10">Africa</span>';
+					slide1 = slide1 + '<span data-weight="10">Europe</span>';
+					slide1 = slide1 + '<span data-weight="10">Spain</span>';
+					slide1 = slide1 + '<span data-weight="10">France</span>';
+					slide1 = slide1 + '<span data-weight="10">Brazil</span>';
+					slide1 = slide1 + '<span data-weight="10">New Zealand</span>';
+					slide1 = slide1 + '<span data-weight="10">Australia</span>';
+
+					$('#dimensions-geographic').append(slide1);
+
+					$("#dimensions-geographic").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});
+
+					// dimensions - personalized
+					slide1 = '<span data-weight="15">Limits</span>';
+					slide1 = slide1 + '<span data-weight="20">Scale</span>';
+					slide1 = slide1 + '<span data-weight="20">Performance</span>';
+					slide1 = slide1 + '<span data-weight="20">Load</span>';
+					slide1 = slide1 + '<span data-weight="10">Security</span>';
+					slide1 = slide1 + '<span data-weight="10">Anonymous</span>';
+					slide1 = slide1 + '<span data-weight="10">Speed</span>';
+					slide1 = slide1 + '<span data-weight="10">Throughput</span>';
+					slide1 = slide1 + '<span data-weight="10">Balanced</span>';
+					slide1 = slide1 + '<span data-weight="15">Distributed</span>';
+					slide1 = slide1 + '<span data-weight="15">Offline</span>';
+
+					$('#dimensions-personalized').append(slide1);
+
+					$("#dimensions-personalized").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});
+
+					// dimensions - collections
+					slide1 = '<span data-weight="10">APIs.json</span>';
+					slide1 = slide1 + '<span data-weight="20">BaaS</span>';
+					slide1 = slide1 + '<span data-weight="20">Collections</span>';
+					slide1 = slide1 + '<span data-weight="20">Stacks</span>';
+					slide1 = slide1 + '<span data-weight="10">Virtual</span>';
+					slide1 = slide1 + '<span data-weight="10">Swagger</span>';
+					slide1 = slide1 + '<span data-weight="10">RAML</span>';
+					slide1 = slide1 + '<span data-weight="10">API Blueprint</span>';
+					slide1 = slide1 + '<span data-weight="10">Composition</span>';
+					slide1 = slide1 + '<span data-weight="10">Backends</span>';
+					slide1 = slide1 + '<span data-weight="10">Ochestration</span>';
+					slide1 = slide1 + '<span data-weight="10">IDE</span>';
+					slide1 = slide1 + '<span data-weight="10">Discovery</span>';
+
+					$('#dimensions-collections').append(slide1);
+
+					$("#dimensions-collections").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});
+
+					// dimensions - lifecycle
+					slide1 = '<span data-weight="15">Integration</span>';
+					slide1 = slide1 + '<span data-weight="15">Design</span>';
+					slide1 = slide1 + '<span data-weight="15">Management</span>';
+					slide1 = slide1 + '<span data-weight="15">Deployment</span>';
+					slide1 = slide1 + '<span data-weight="15">Discovery</span>';
+					slide1 = slide1 + '<span data-weight="10">Testing</span>';
+					slide1 = slide1 + '<span data-weight="10">Monitoring</span>';
+					slide1 = slide1 + '<span data-weight="10">QA</span>';
+					slide1 = slide1 + '<span data-weight="10">Development</span>';
+					slide1 = slide1 + '<span data-weight="10">Deprecation</span>';
+					slide1 = slide1 + '<span data-weight="10">Mock</span>';
+					slide1 = slide1 + '<span data-weight="10">Production</span>';
+					slide1 = slide1 + '<span data-weight="10">Sandbox</span>';
+
+					$('#dimensions-lifecycle').append(slide1);
+
+					$("#dimensions-lifecycle").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});
+
+					// dimensions - lifecycle
+					slide1 = '<span data-weight="30">Pay For What You Use</span>';
+					slide1 = slide1 + '<span data-weight="10">Units</span>';
+					slide1 = slide1 + '<span data-weight="10">Bandwidth</span>';
+					slide1 = slide1 + '<span data-weight="10">Performance</span>';
+					slide1 = slide1 + '<span data-weight="10">Redundancy</span>';
+					slide1 = slide1 + '<span data-weight="10">Isolation</span>';
+					slide1 = slide1 + '<span data-weight="10">Resiliency</span>';
+					slide1 = slide1 + '<span data-weight="10">Distribution</span>';
+					slide1 = slide1 + '<span data-weight="10">No Change</span>';
+					slide1 = slide1 + '<span data-weight="10">Portability</span>';
+					slide1 = slide1 + '<span data-weight="10">Scalability</span>';
+					slide1 = slide1 + '<span data-weight="10">Transiency</span>';
+					slide1 = slide1 + '<span data-weight="10">Security</span>';
+					slide1 = slide1 + '<span data-weight="10">Privacy</span>';
+
+					$('#dimensions-business-models').append(slide1);
+
+
+					$("#dimensions-business-models").awesomeCloud({
+						"size" : {
+						"grid" : 8,
+						"factor" : 3
+						},
+						"options" : {
+						"color" : "random-dark",
+						"rotationRatio" : 0
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "circle"
+						});
+
+				});
+
+			</script>
+
+            <script>
+
+                // Full list of configuration options available here:
+                // https://github.com/hakimel/reveal.js#configuration
+                Reveal.initialize({
+                    controls: true,
+                    progress: true,
+                    history: true,
+
+                    theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
+                    transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+
+                    // Optional libraries used to extend on reveal.js
+                    dependencies: [
+                        { src: 'http://kinlane.github.com/talks/lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    ]
+                });
+
+            </script>
+
+    </body>
+</html>
