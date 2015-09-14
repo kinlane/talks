@@ -1,0 +1,581 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Containers Will Do For APIs What APIs Do For Companies</title>
+
+    <meta name="description" content="A walk through the history of APIs, API design & planning, API development, API evangelism and whats next when it comes to APIs.">
+    <meta name="author" content="Kin Lane">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/main.css">
+    <link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="http://kinlane.github.com/lib/css/zenburn.css">
+
+    <script>
+        // If the query includes 'print-pdf' we'll use the PDF print sheet
+        document.write( '<link rel="stylesheet" href="http://kinlane.github.com/talks/stylesheets/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+		.wordcloud {
+			border: 0px solid #000;
+			height: 5in;
+			margin: 0.1in auto;
+			padding: 0;
+			page-break-after: always;
+			page-break-inside: avoid;
+			width: 6.5in;
+		}
+    </style>
+
+</head>
+
+        <body>
+
+            <div class="reveal">
+
+                <!-- Used to fade in a background when a specific slide state is reached -->
+                <div class="state-background"></div>
+
+                <!-- Any section element inside of this container is displayed as a slide -->
+                <div class="slides">
+
+
+
+              		<section>
+                    <p><br /></p>
+                    <p><br /></p>
+                    <h1>Kin Lane</h1>
+                    <p><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/national-mls.png" width="325" /></p>
+                    <p>&nbsp;</p>
+                    <p>IDX Developer Summit - September 2015</p>
+                  </section>
+
+                  <section>
+                    <p><br /></p>
+                    <p><br /></p>
+                    <h2>Kin Lane</h2>
+                    <h4>@APIEvangelist</h4>
+                    <p>&nbsp;</p>
+                    <h3>The API Opportunity in Real Estate industry</h3>
+                    <p>&nbsp;</p>
+                    <p>IDX Developer Summit - September 2015</p>
+                  </section>
+
+                  <section><h2>Kin Lane</h2>
+                  <ul style="font-size: 18px; padding-top: 20px;">
+                  <li>25 Years Database Engineer</li>
+                  <li>15 Years Web Applications</li>
+                  <li>8 Years Cloud Computing</li>
+                  <li>4 Years Studying APIs</li>
+                  </ul>
+                  </section>
+
+                  <section>
+                    <p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png" alt="" width="300" /></p>
+                    <h3>apievangelist.com</h3>
+                  </section>
+
+                	<section><h2>Target</h2>
+                  <ul style="font-size: 18px; padding-top: 20px;">
+                  <li>Individuals</li>
+                  <li>Startups</li>
+                  <li>SMB</li>
+                  <li>Enterprise</li>
+                  <li>Government</li>
+                  </ul></section>
+
+                  <section><br />
+                    <img src="https://s3.amazonaws.com/kinlane-productions/kin-lane/kin-lane-presidential-innovation-fellow.png" width="650" />
+                  </section>
+
+                    		<section><p><br /><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png" alt="" width="290" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(APIs)</p></section>
+
+                    		<section><p><br /><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-business-icon.png" alt="" width="290" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Business)</p></section>
+
+                    		<section><p><br /><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/api-commons/api-commons-icon.png" alt="" width="290" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">14 Years</p></section>
+
+                    		<section><h2>Roy Fieldings Dissertation</h2>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/roy-fielding/roy-fielding-dissertation-home-page.png" alt="" width="550" /></p></section>
+
+                    		<section><p><br /> <img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/salesforce-logo.png" alt="" width="325" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Contacts / Relationships / Sales)</p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/amazon/amazon-com-logo.jpg" alt="" width="375" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Products)</p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/ebay/ebay.png" alt="" width="325" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Auctions)</p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/delicious/delicious-logo.jpg" alt="" width="375" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Links)</p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/flickr/flickr-logo.jpeg" alt="" width="300" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Images)</p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/twitter/tweet-bird-blue-white.png" alt="" width="250" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Social)</p></section>
+
+                    		<section><p><img style="margin-bottom: 60px;" src="https://s3.amazonaws.com/kinlane-productions/AWS_LOGO_CMYK.jpg" alt="" width="275" /><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-documents.png" alt="" width="200" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">S3 (Files)</p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/google/google-maps-logo.jpg" alt="" width="350" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Mapping)</p></section>
+
+                    		<section><p><img style="margin-bottom: 60px;" src="https://s3.amazonaws.com/kinlane-productions/AWS_LOGO_CMYK.jpg" alt="" width="275" /><img style="padding: 15px;" src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-servers.png" alt="" width="175" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">EC2 (Compute)</p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/youtube/youtube-logo.png" alt="" width="300" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Videos)</p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/foursquare/foursquare_logo.png" alt="" width="350" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Location)</p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/twilio/twilio-logo-2100x650.png" alt="" width="350" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(SMS / MMS / Voice)</p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/sendgrid/sendgrid-logo.jpeg" alt="" width="350" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Email)</p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/spotify/spotify-logo.png" alt="" width="400" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Music)</p></section>
+
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/stripe/Stripe-logo.jpeg" alt="" width="350" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Payments)</p></section>
+
+                    		<section>
+                          <div id="essential-resources" class="wordcloud" style="margin-left: 425px;"></div>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">Essential Resources</p>
+                        </section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-website.png" alt="" width="300" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">Websites</p></section>
+
+                    		<section><p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-iphone.png" alt="" width="175" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">Mobile</p></section>
+
+                    		<section><p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-tablet.png" alt="" width="350" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">Tablet</p></section>
+
+                    		<section><p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-single-page-apps.png" alt="" width="350" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">Single Page Apps</p></section>
+
+                    		<section>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-internet-of-things.png" alt="" width="350" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">Internet of Things</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-question-mark.png" alt="" width="250" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">What Resources Are Available?</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/MLS+Logo.png" alt="" width="425" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Real Estate)</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-copyright.gif" alt="" width="250" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">Copyright</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-highway-open.png" alt="" width="325" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">Long Haul</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-opportunity.png" alt="" width="270" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">Other Opportunities</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-buy-home.png" alt="" width="325" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">Why Buy Homes?</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-buy-business.png" alt="" width="325" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">Why Buy Business?</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-trends.png" alt="" width="325" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">What Are The Trends?</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/idx-housing-data.png" alt="" width="750" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Housing Data)</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/idx-cfpb-home.png" alt="" width="700" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Mortgage Data)</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/idx-mortgage.png" alt="" width="850" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Mortgage Data)</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/idx-schools-api.png" alt="" width="750" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Schools)</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/idx-linkedin-job-api.png" alt="" width="750" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Jobs)</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/idx-business.png" alt="" width="750" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Business)</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/idx-networking.png" alt="" width="675" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Networking)</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/idx-eents.png" alt="" width="675" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Events)</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/idx-transportation.png" alt="" width="735" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Transportation)</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/idx-church.png" alt="" width="735" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Church)</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/idx-restaurants.png" alt="" width="735" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Restaurants)</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/idx-weather.png" alt="" width="750" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Weather)</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/idx-healthcare.png" alt="" width="800" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Healthcare)</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/idx-energy.png" alt="" width="690" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Energy)</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/idx-environment.png" alt="" width="850" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Environment)</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/idx-environment.png" alt="" width="850" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Environment)</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/idx-agriculture.png" alt="" width="690" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Agriculture)</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/idx-recreation.png" alt="" width="700" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Recreation)</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-city-skyline.png" alt="" width="400" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">80% Of The Top 50 Cities In US</p>
+                        </section>
+
+                        <section>
+                          <p><a href="http://nycopendata.socrata.com/" target="_blank"><img src="http://kinlane-productions.s3.amazonaws.com/screen-capture-api/nycopendata-socrata-com.png" alt="" width="500" /></a></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">New York</p>
+                        </section>
+
+                    		<section>
+                          <p><a href="https://data.lacity.org/" target="_blank"><img src="http://kinlane-productions.s3.amazonaws.com/screen-capture-api/data-lacity-org.png" alt="" width="875" /></a></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">Los Angeles</p>
+                        </section>
+
+                    		<section>
+                          <p><a href="https://data.cityofchicago.org/" target="_blank"><img src="http://kinlane-productions.s3.amazonaws.com/screen-capture-api/data-cityofchicago-org.png" alt="" width="500" /></a></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">Chicago</p>
+                        </section>
+
+                        <section>
+                          <p><a href="https://data.cityofchicago.org/" target="_blank"><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/idx-county.png" alt="" width="800" /></a></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">County</p>
+                        </section>
+
+                        <section>
+                          <p><a href="https://data.cityofchicago.org/" target="_blank"><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/idx-state.png" alt="" width="750" /></a></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">State</p>
+                        </section>
+
+                        <section>
+                          <p><a href="https://data.cityofchicago.org/" target="_blank"><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/idx-federal.png" alt="" width="750" /></a></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">Federal</p>
+                        </section>
+
+                        <section>
+                          <div id="essential-resources-next" class="wordcloud" style="margin-left: 400px;"></div>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">Essential Resources</p>
+                        </section>
+
+                        <section>
+                          <p><br /> <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-website.png" alt="" width="300" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">Websites</p>
+                        </section>
+
+                    		<section>
+                          <p><br /></p>
+                          <p><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-iphone.png" alt="" width="175" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">Mobile</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-consume.png" alt="" width="275" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">Consume</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-provide.png" alt="" width="275" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">Provide</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/trends/aggregation-trend.png" alt="" width="300" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">Aggregate</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/MLS+Logo.png" alt="" width="425" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">(Real Estate)</p>
+                        </section>
+
+                        <section>
+                          <p><br /></p>
+                          <p><img src="https://s3.amazonaws.com/kinlane-productions/talks/idx/bw-big-picture-api.png" alt="" width="425" /></p>
+                          <p style="font-size: 55px; font-weight: bold; margin-top:25px;">Big Picture</p>
+                        </section>
+
+                    		<section><h1>The End</h1>
+            						<br />
+            						<h4>By Kin Lane (@kinlane)</h4>
+            						<br />
+            						<p align="center"><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist/api-evangelist-logo-400.png" width="300" /></p></section>
+
+
+                </div>
+
+                <!-- The navigational controls UI -->
+                <aside class="controls">
+                    <a class="left" href="#">&#x25C4;</a>
+                    <a class="right" href="#">&#x25BA;</a>
+                    <a class="up" href="#">&#x25B2;</a>
+                    <a class="down" href="#">&#x25BC;</a>
+                </aside>
+
+                <!-- Presentation progress bar -->
+                <div class="progress"><span></span></div>
+
+            </div>
+
+            <script src="http://kinlane.github.com/talks/lib/js/head.min.js"></script>
+            <script src="http://kinlane.github.com/talks/javascripts/reveal.min.js"></script>
+    		      <script src="http://kinlane.github.com/talks/javascripts/jquery.awesomeCloud-0.2.min.js"></script>
+
+			     <script type="text/javascript">
+
+  				$(document).ready(function(){
+
+  					// dimensions - lifecycle
+  					slide1 = '<span data-weight="10">Links</span>';
+  					slide1 = slide1 + '<span data-weight="10">Email</span>';
+  					slide1 = slide1 + '<span data-weight="10">Voice</span>';
+  					slide1 = slide1 + '<span data-weight="10">Images</span>';
+  					slide1 = slide1 + '<span data-weight="10">Friends</span>';
+  					slide1 = slide1 + '<span data-weight="10">Videos</span>';
+  					slide1 = slide1 + '<span data-weight="10">Sales</span>';
+  					slide1 = slide1 + '<span data-weight="10">Products</span>';
+  					slide1 = slide1 + '<span data-weight="10">Compute</span>';
+  					slide1 = slide1 + '<span data-weight="10">Actions</span>';
+  					slide1 = slide1 + '<span data-weight="10">Messages</span>';
+  					slide1 = slide1 + '<span data-weight="10">Followers</span>';
+  					slide1 = slide1 + '<span data-weight="10">Checkin</span>';
+  					slide1 = slide1 + '<span data-weight="10">Payments</span>';
+  					slide1 = slide1 + '<span data-weight="10">Maps</span>';
+  					slide1 = slide1 + '<span data-weight="10">Storage</span>';
+  					slide1 = slide1 + '<span data-weight="10">Location</span>';
+  					slide1 = slide1 + '<span data-weight="10">Sharing</span>';
+  					slide1 = slide1 + '<span data-weight="10">Audio</span>';
+  					slide1 = slide1 + '<span data-weight="10">SMS</span>';
+  					slide1 = slide1 + '<span data-weight="10">MMS</span>';
+
+  					$('#essential-resources').append(slide1);
+
+
+  					$("#essential-resources").awesomeCloud({
+  						"size" : {
+  						"grid" : 8,
+  						"factor" : 4
+  						},
+  						"options" : {
+  						"color" : "random-dark",
+  						"rotationRatio" : 0
+  						},
+  						"font" : "'Times New Roman', Times, serif",
+  						"shape" : "circle"
+  						});
+
+              // dimensions - Resource 2
+    					slide1 = '<span data-weight="10">Links</span>';
+    					slide1 = slide1 + '<span data-weight="10">Email</span>';
+    					slide1 = slide1 + '<span data-weight="10">Voice</span>';
+    					slide1 = slide1 + '<span data-weight="10">Images</span>';
+    					slide1 = slide1 + '<span data-weight="10">Friends</span>';
+    					slide1 = slide1 + '<span data-weight="10">Videos</span>';
+    					slide1 = slide1 + '<span data-weight="10">Sales</span>';
+    					slide1 = slide1 + '<span data-weight="10">Products</span>';
+    					slide1 = slide1 + '<span data-weight="10">Compute</span>';
+    					slide1 = slide1 + '<span data-weight="10">Actions</span>';
+    					slide1 = slide1 + '<span data-weight="10">Messages</span>';
+    					slide1 = slide1 + '<span data-weight="10">Followers</span>';
+    					slide1 = slide1 + '<span data-weight="10">Checkin</span>';
+    					slide1 = slide1 + '<span data-weight="10">Payments</span>';
+    					slide1 = slide1 + '<span data-weight="10">Maps</span>';
+    					slide1 = slide1 + '<span data-weight="10">Storage</span>';
+    					slide1 = slide1 + '<span data-weight="10">Location</span>';
+    					slide1 = slide1 + '<span data-weight="10">Sharing</span>';
+    					slide1 = slide1 + '<span data-weight="10">Audio</span>';
+    					slide1 = slide1 + '<span data-weight="10">SMS</span>';
+    					slide1 = slide1 + '<span data-weight="10">MMS</span>';
+              slide1 = slide1 + '<span data-weight="10">Housing</span>';
+              slide1 = slide1 + '<span data-weight="10">Mortgage</span>';
+              slide1 = slide1 + '<span data-weight="10">Schools</span>';
+              slide1 = slide1 + '<span data-weight="10">Jobs</span>';
+              slide1 = slide1 + '<span data-weight="10">Business</span>';
+              slide1 = slide1 + '<span data-weight="10">Events</span>';
+              slide1 = slide1 + '<span data-weight="10">Transportation</span>';
+              slide1 = slide1 + '<span data-weight="10">Church</span>';
+              slide1 = slide1 + '<span data-weight="10">Restaurants</span>';
+              slide1 = slide1 + '<span data-weight="10">Healthcare</span>';
+              slide1 = slide1 + '<span data-weight="10">Energy</span>';
+              slide1 = slide1 + '<span data-weight="10">Environment</span>';
+              slide1 = slide1 + '<span data-weight="10">Agriculture</span>';
+              slide1 = slide1 + '<span data-weight="10">Recreation</span>';
+
+    					$('#essential-resources-next').append(slide1);
+
+
+    					$("#essential-resources-next").awesomeCloud({
+    						"size" : {
+    						"grid" : 8,
+    						"factor" : 4
+    						},
+    						"options" : {
+    						"color" : "random-dark",
+    						"rotationRatio" : 0
+    						},
+    						"font" : "'Times New Roman', Times, serif",
+    						"shape" : "circle"
+    						});
+
+  				});
+
+  			</script>
+
+
+            <script>
+
+                // Full list of configuration options available here:
+                // https://github.com/hakimel/reveal.js#configuration
+                Reveal.initialize({
+                    controls: true,
+                    progress: true,
+                    history: true,
+
+                    theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
+                    transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+
+                    // Optional libraries used to extend on reveal.js
+                    dependencies: [
+                        { src: 'http://kinlane.github.com/talks/lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: 'http://kinlane.github.com/talks/lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    ]
+                });
+
+            </script>
+
+    </body>
+</html>
