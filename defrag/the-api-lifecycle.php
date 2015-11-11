@@ -809,18 +809,16 @@
 													</table>
 													<br />
 													<ul style="font-size: 24px; list-style: circle; margin-left: 600px;">
-	        									                          <li style="font-size: 24px; text-align: left; padding: 2px;">Database to API</li>
-	        										                          <li style="font-size: 24px; text-align: left; padding: 2px;">Framework</li>
-	        										                          <li style="font-size: 24px; text-align: left; padding: 2px;">Gateway</li>
-	        										                          <li style="font-size: 24px; text-align: left; padding: 2px;">Proxy</li>
-	        										                          <li style="font-size: 24px; text-align: left; padding: 2px;">Connector</li>
-	        										                          <li style="font-size: 24px; text-align: left; padding: 2px;">Hosting</li>
-	        										                          <li style="font-size: 24px; text-align: left; padding: 2px;">JSON to API</li>
-	        										                          <li style="font-size: 24px; text-align: left; padding: 2px;">Scraping</li>
-	        										                          <li style="font-size: 24px; text-align: left; padding: 2px;">Container</li>
-	        										                          <li style="font-size: 24px; text-align: left; padding: 2px;">Github</li>
-	        										                          <li style="font-size: 24px; text-align: left; padding: 2px;">CSV to API</li>
-	        																							</ul>
+                              <li style="font-size: 24px; text-align: left; padding: 2px;">CSV to API</li>
+	                            <li style="font-size: 24px; text-align: left; padding: 2px;">Database to API</li>
+		                          <li style="font-size: 24px; text-align: left; padding: 2px;">Framework</li>
+		                          <li style="font-size: 24px; text-align: left; padding: 2px;">Gateway</li>
+		                          <li style="font-size: 24px; text-align: left; padding: 2px;">Proxy</li>
+		                          <li style="font-size: 24px; text-align: left; padding: 2px;">Connector</li>
+		                          <li style="font-size: 24px; text-align: left; padding: 2px;">Hosting</li>
+		                          <li style="font-size: 24px; text-align: left; padding: 2px;">Scraping</li>
+		                          <li style="font-size: 24px; text-align: left; padding: 2px;">Container</li>
+	        								           </ul>
 													</section>
 												              			<section>
 											<table style="margin-left: 475px; margin-top: 100px;" cellspacing="5">
@@ -2005,10 +2003,6 @@
 	        										                          <li style="font-size: 24px; text-align: left; padding: 2px;">Content Security Policy</li>
 	        										                          <li style="font-size: 24px; text-align: left; padding: 2px;">Content Spoofing</li>
 	        										                          <li style="font-size: 24px; text-align: left; padding: 2px;">CORS RequestPreflighScrutiny</li>
-	        										                          <li style="font-size: 24px; text-align: left; padding: 2px;">Cross-site Scripting (XSS)</li>
-	        										                          <li style="font-size: 24px; text-align: left; padding: 2px;">Custom Special Character Injection</li>
-	        										                          <li style="font-size: 24px; text-align: left; padding: 2px;">Format String Attack</li>
-	        										                          <li style="font-size: 24px; text-align: left; padding: 2px;">Full Path Disclosure</li>
 	        																							</ul>
 													</section>
 												                        <section id="fragments">
@@ -4074,14 +4068,18 @@
                           <section>
       		            			<p><br /></p>
       		            			<p><img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png" width="400" /></p>
-      		                	</section>                           
+      		                	</section>
 
                           <section>
+                              <p><br /></p>
+                              <p><br /></p>
                               <h1>The End</h1>
                               <br />
-                              <h4>By Kin Lane (@kinlane)</h4>
+                              <p><strong>By Kin Lane</strong></p>
                               <br />
-                              <p align="center"><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist/api-evangelist-logo-400.png" width="300" /></p>
+                              <p><strong>@kinlane</strong></p>
+                              <br /><br />
+                              <p align="center"><img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist/api-evangelist-logo-400.png" width="400" /></p>
                           </section>
 
                 </div>
