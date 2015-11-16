@@ -83,7 +83,7 @@ body {
  *********************************************/
 
 .reveal a:not(.image) {
-	color: hsl(185, 85%, 50%);
+	/*color: hsl(185, 85%, 50%);
 	text-decoration: none;
 
 	-webkit-transition: color .15s ease;
@@ -91,6 +91,7 @@ body {
 	    -ms-transition: color .15s ease;
 	     -o-transition: color .15s ease;
 	        transition: color .15s ease;
+					*/
 }
 	.reveal a:not(.image):hover {
 		/*color: hsl(185, 85%, 70%);
