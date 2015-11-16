@@ -82,30 +82,6 @@ body {
  * LINKS
  *********************************************/
 
-.reveal a:not(.image) {
-	/*color: hsl(185, 85%, 50%);
-	text-decoration: none;
-
-	-webkit-transition: color .15s ease;
-	   -moz-transition: color .15s ease;
-	    -ms-transition: color .15s ease;
-	     -o-transition: color .15s ease;
-	        transition: color .15s ease;
-					*/
-}
-	.reveal a:not(.image):hover {
-		/*color: hsl(185, 85%, 70%);
-
-		text-shadow: none;
-		border: none;
-		border-radius: 2px;*/
-	}
-
-.reveal .roll span:after {
-	/*color: #fff;
-	background: hsl(185, 60%, 35%);*/
-}
-
 
 /*********************************************
  * IMAGES
