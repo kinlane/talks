@@ -93,16 +93,16 @@ body {
 	        transition: color .15s ease;
 }
 	.reveal a:not(.image):hover {
-		color: hsl(185, 85%, 70%);
+		/*color: hsl(185, 85%, 70%);
 
 		text-shadow: none;
 		border: none;
-		border-radius: 2px;
+		border-radius: 2px;*/
 	}
 
 .reveal .roll span:after {
-	color: #fff;
-	background: hsl(185, 60%, 35%);
+	/*color: #fff;
+	background: hsl(185, 60%, 35%);*/
 }
 
 
@@ -118,7 +118,7 @@ body {
 	color: #fff;
 }
 	.reveal .controls a.enabled {
-	
+
 	}
 
 
