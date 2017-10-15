@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>eHealth - API 101</title>
+
+        <meta name="description" content="drone recovery in the attention economy">
+        <meta name="author" content="Kin Lane">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+              <section>
+                 <h1>1 Billion Websites</h1>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/talks/101/facebook-screenshot.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Facebook</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/talks/101/yahoo-screenshot.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Yahoo</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/talks/101/youtube-screenshot.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Youtube</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/talks/101/amazon-screenshot.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Amazon</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/talks/101/twitter-screenshot.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Twitter</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/talks/101/pinterest-screenshot.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Pinterest</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/talks/101/reddit-screenshot.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Reddit</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/talks/101/tag-cloud-life-bits.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Bits Of Our Lives</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/101/html-yahoo.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Hand Written Websites Using HTML</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/101/database-facebook.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Website Content Was Coming From Databases</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/101/widget-website.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Adding An Amazon Product Widget</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/101/delicious-website.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Add A Delicious Bookmark Widget</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/101/twitter-website.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Add Twitter Widget</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/101/api-db-website.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Content Comes From Many Databases & APIs</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/talks/101/iphone-series.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Then The iPhone Happened</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/talks/101/foursquare-mobile-screenshot.jpg" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Foursquare</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/talks/101/instagram-mobile-screenshot.jpg" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Instagram</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/talks/101/pandora-mobile-screenshot.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Pandora</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/101/api-website.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">APIs Are Powering Websites</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/101/api-mobile.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">API Are Powering Mobile Apps</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/101/api-buttons-widgets.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">APIs Are Powering Buttons, Badges, and Widgets</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/101/api-google-spreadsheet.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">APIs Are Powering Spreadsheets</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/101/api-nest.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">APIs Are Powering Devices</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-programmer.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">APIs Are Not Just For Developers</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/101/ifttt-zapier.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Orchestrate Using APIs With Zapier</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/101/bw-running.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Making Companies & Organizations More Nimble & Agile</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/101/bw-observable.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Helps Companies & Organizations Be More Observable</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/101/bw-big-fish-little-fish.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Allowing Companies & Organizations To Be More Competitive</p>
+              </section>
+
+              <section>
+                 <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-fist-wide.png" width="55%" style="" align="center" /></p>
+                 <p style="font-size: 28px; font-weight: bold; color: #000;">Empowering Individuals To Take Control Online</p>
+              </section>
+
+              <section>
+                <table>
+                  <tr>
+                    <td width="100%" align="center">
+                      <a href="/red-hat-transforming-government-it/trends/"><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-clock.jpeg"" width="300" /></a>
+                      <p><a href="/red-hat-transforming-government-it/trends/"><strong>History</strong></a></p>
+                    </td>
+                  </tr>
+                </table>
+             </section>
+
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/notes/notes.js', async: true }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
