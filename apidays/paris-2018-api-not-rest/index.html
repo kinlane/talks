@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>APIDays Paris - API Is Not Just REST</title>
+
+        <meta name="description" content="drone recovery in the attention economy">
+        <meta name="author" content="Kin Lane">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+
+        <style>
+          .img{ border: 0px #FFF; }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+                       <section>
+                          <p style="font-size: 74px; font-weight: bold;">Kin Lane</p>
+                          <p style="font-size: 48px; font-weight: bold;">{"logo":"API Evangelist"}</p>
+                          <br />
+                          <p style="font-size: 24px; font-weight: bold;">API Is Not Just REST</p>
+                          <br />
+                          <p style="font-size: 24px; font-weight: bold;">APIDays Paris</p>
+                          <p style="font-size: 24px; font-weight: bold;">January 2018</p>
+                          <br />
+                      </section>
+
+                      <section>
+
+                        <img src="https://s3.amazonaws.com/kinlane-productions/kin-lane/kin-lane-cartoon-questioning.png" align="center" width="50%">
+                        <p style="font-size: 34px; font-weight: bold;">Kin Lane - The API Evangelist</p>
+
+                      </section>
+
+                      <section>
+
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-toolbox.jpg" align="center" width="65%">
+                        <p style="font-size: 34px; font-weight: bold;">Diverse API Toolbox</p>
+
+                      </section>
+
+                      <section>
+
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-operations.png" align="center" width="45%">
+                        <p style="font-size: 34px; font-weight: bold;">Application Programming Interface</p>
+
+                      </section>
+
+                      <section>
+
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-soap.png" align="center" width="35%">
+                        <p style="font-size: 34px; font-weight: bold;">SOAP</p>
+
+                      </section>
+
+                      <section>
+
+                        <h1>&#x3C;XML&#x3E; & {JSON} RPC</h1>
+
+                      </section>
+
+                      <section>
+
+                        <h1>REST</h1>
+                        <p style="font-size: 34px; font-weight: bold;">Representational State Transfer</p>
+
+                      </section>
+
+                      <section>
+
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-csv.png" align="center" width="25%">
+                        <p style="font-size: 34px; font-weight: bold;">text/csv</p>
+
+                      </section>
+
+                      <section>
+
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-xml.png" align="center" width="25%">
+                        <p style="font-size: 34px; font-weight: bold;">text/xml</p>
+
+                      </section>
+
+                      <section>
+
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-json.png" align="center" width="25%">
+                        <p style="font-size: 34px; font-weight: bold;">application/json</p>
+
+                      </section>
+
+                      <section>
+
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-hypermedia.png" align="center" width="40%">
+                        <p style="font-size: 34px; font-weight: bold;">Hypermedia</p>
+
+                      </section>
+
+                      <section>
+
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-question-mark.png" align="center" width="35%">
+                        <p style="font-size: 34px; font-weight: bold;">API Query Layer</p>
+
+                      </section>
+
+                      <section>
+
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/webhooks.png" align="center" width="35%">
+                        <p style="font-size: 34px; font-weight: bold;">Webhooks</p>
+
+                      </section>
+
+                      <section>
+
+                        <h1>Websub</h1>
+                        <p style="font-size: 34px; font-weight: bold;">fka Pubsubhubbub</p>
+
+                      </section>
+
+                      <section>
+
+                        <p style="font-size: 55px; font-weight: bold;">Server-Sent Events (SSE)</p>
+
+                      </section>
+
+                      <section>
+
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-websockets.png" align="center" width="35%">
+                        <p style="font-size: 34px; font-weight: bold;">Websockets</p>
+
+                      </section>
+
+                      <section>
+
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-grpc.png" align="center" width="40%">
+                        <p style="font-size: 34px; font-weight: bold;">HTTP/2</p>
+
+                      </section>
+
+                      <section>
+
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-kafka.jpg" align="center" width="50%">
+
+                      </section>
+
+                      <section>
+
+                        <h1>MQTT</h1>
+                        <p style="font-size: 34px; font-weight: bold;">Message Queuing Telemetry Transport</p>
+
+                      </section>
+
+                      <section>
+
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-network-header.png" align="center" width="35%">
+                        <p style="font-size: 34px; font-weight: bold;">Headers</p>
+
+                      </section>
+
+                      <section>
+
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-network-message.png" align="center" width="30%">
+                        <p style="font-size: 34px; font-weight: bold;">Message</p>
+
+                      </section>
+
+                      <section>
+
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-client.png" align="center" width="35%">
+                        <p style="font-size: 34px; font-weight: bold;">Client</p>
+
+                      </section>
+
+                      <section>
+
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-tool-right.png" align="center" width="35%">
+                        <p style="font-size: 34px; font-weight: bold;">Right Tools</p>
+
+                      </section>
+
+                       <section>
+                          <p style="font-size: 74px; font-weight: bold;">The End</p>
+                          <br />
+                          <p style="font-size: 24px; font-weight: bold;">@kinlane</p>
+                          <p style="font-size: 24px; font-weight: bold;">@apievangelist</p>
+                          <br />
+                          <p style="font-size: 48px; font-weight: bold;">{"logo":"API Evangelist"}</p>
+                      </section>
+
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/notes/notes.js', async: true }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
