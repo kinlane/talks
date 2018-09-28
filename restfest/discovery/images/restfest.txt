@@ -1,0 +1,119 @@
+
+
+About Me
+
+What Does API Discovery Mean to You?
+
+
+API Root? - api-root-discovery.png
+
+Hypermedia? - hypermedia-discovery.png
+
+Programmable Web? 
+
+Google?
+
+
+Why Is API Being Discovered?
+
+Looking for new APIs
+
+Use in my application
+
+Planning for a team
+
+Planning for a client / customer
+
+Does this service I use have an API?
+
+Developing an API
+
+Find my API
+
+Looking for public API
+
+Looking for internal API
+
+APIs across our organization
+
+Looking for APIs w/ same pattern
+
+API details for known API at develop time
+
+API details for known API at run time
+
+API details for known API at manage time
+
+API details for iPaaS
+
+API details for Mesh
+
+Find
+
+Google 
+ProgrammableWeb
+Rapid API
+APIs.io
+APIs.guru
+Google API Discovery
+IDE
+GitHub
+
+Be Found
+
+JSON Home - https://mnot.github.io/I-D/json-home/
+Schema.org - https://pending.schema.org/WebAPI
+API Definitions - OpenAPI Postman
+
+
+Known Known / Known Unknowns / Unknown Unknown
+
+
+API Operations - https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-manage-operations.png
+
+APIs.json - http://apisjson.org/
+
+Data.json - https://healthdata.gov/data.json
+
+APIs.json Overview
+
+
+APIs.json Docs Pricing Plans
+
+APIs.json OpenAPI Postman
+
+APIs.json Twitter Github
+
+API Commons - 
+
+APIs.json Plans SDK SLA
+
+Publish to Github
+
+Search APIs
+Search by Path
+Search by Summary
+Search by Parameter
+Search by Enumerator
+
+API Rating
+
+Find By Activity 
+Find By Reliability
+Find By Price
+Find By Access
+Find By SLA
+Find By Team
+
+
+
+
+
+
+
+
+
+
+
+
+
